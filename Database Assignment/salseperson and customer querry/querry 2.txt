@@ -1,0 +1,1 @@
+SELECT sname,city,comm FROM salseperson WHERE (city = "london") AND (comm > ".10");

@@ -1,0 +1,1 @@
+SELECT First_name,Incentive_amount FROM employee LEFT JOIN incentive ON employee.First_name = incentive.Incentive_amount;

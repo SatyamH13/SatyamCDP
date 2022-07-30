@@ -1,0 +1,1 @@
+SELECT * FROM employee WHERE First_name like "%s";

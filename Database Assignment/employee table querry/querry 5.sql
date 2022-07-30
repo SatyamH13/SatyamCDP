@@ -1,0 +1,1 @@
+SELECT * FROM `employee` WHERE Joining_date = "2013-01-01";

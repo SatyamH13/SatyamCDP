@@ -1,0 +1,1 @@
+SELECT * FROM salseperson WHERE comm BETWEEN ".10" AND ".12";

@@ -1,0 +1,1 @@
+SELECT MAX(comm) FROM salseperson;
