@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration_form_4</title>
+	<link rel="icon" href="https://image.similarpng.com/very-thumbnail/2020/11/Yahoo-icon-design-on-transparent-background-PNG.png">
+	<style>
+		body{
+			background-color:black;
+		}
+	</style>
+	
+</head>
+<body>
+	<center>
+	<form action="https://www.google.com/" method="post">
+		<table border="5" cellspacing="5px" cellpadding="7px" style="background-color:whitesmoke;color:purple;">
+			<th colspan="2" style="background-color:orange;">Registration Form</th>
+			<tr>
+				<td><b>Name:</b></td>
+				<td><input type="text" placeholder="Name" required pattern="[a-zA-Z]+" title="you can insert alphabets only...!"></td> 
+			</tr>
+			<tr>
+				<td><b>Mobile No:</b></td>
+				<td><input type="text" placeholder="Mobile no" required pattern="[0-9]{10}" title="you can insert 10 digits only...!"></td> 
+			</tr>
+			<tr>
+				<td><b>Email:</b></td>
+				<td><input type="text" placeholder="email address" required pattern="[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]+"></td>
+			</tr>
+			<tr>
+				<td><b>Password:</b></td>
+				<td><input type="Password" placeholder="Password" required pattern="[a-zA-z0-9]{6,8}"></td>
+			</tr>
+			<tr>
+				<td><b>Form No:</b></td>
+				<td><input type="number" placeholder="Form No" min="1" max="5" required></td>
+			</tr>
+			<tr>
+				<td><b>Country:</b></td>
+					<td>
+				<select>
+
+					<option hidden>---Select Country---</option>
+					<option>India</option>
+					<option>Australia</option>
+					<option>England</option>
+					<option>Canada</option>
+					<option>Us</option>
+					</select>
+				</td>
+				
+			</tr>
+			<tr>
+				<td><b>Upload an Image:</b></td>
+				<td><input type="file" placeholder="Upload" required multiple></td>
+			</tr>
+			<tr>
+				<td><b>Date of Birth:</b></td>
+				<td><input type="Date" required></td>
+			</tr>
+			<tr>
+				<td><b>Gender:</b></td>
+				<td><input type="radio" name="Gender" >Male
+				<input type="radio" name="Gender">Female
+				</td>
+			</tr>
+			<tr>
+				<td><b>Hobbies:</b></td>
+				<td>
+					<input type="checkbox">Dancing
+					<input type="checkbox">singing
+					<input type="checkbox">Travelling
+				</td>
+			</tr>
+			<tr>
+				<td><b>Address:</b></td>
+				<td><textarea rows="4" cols="20" required></textarea></td>
+			</tr>
+              
+
+			<tr>
+				<td style="background-color:orange;"><input type="Submit" name=""></td>
+			</tr>
+			<tr>
+				<td style="background-color:orange;"><input type="Reset" name=""></td>
+			</tr>
+
+		</table>
+	</form>
+	</center>
+</body>
+</html>
