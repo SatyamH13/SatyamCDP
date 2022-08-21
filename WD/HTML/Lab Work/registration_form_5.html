@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration_Form_5</title>
+	<link rel="icon" href="https://img.lovepik.com/element/45004/5205.png_300.png">
+	<style>
+		table
+		{
+			background:linear-gradient(red,blue,green,black,purple,pink,gray);
+			color:white;
+
+		}
+		body
+		{
+			background-image:url(F:\img1.jpg);
+			background-attachment:fixed;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+	</style>
+</head>
+<body>
+	<center>
+	<form action="https://www.google.com/" method="post">
+		<table border="5" cellpadding="5px" cellspacing="5px">
+			<th colspan="2">Registration Form</th>
+			<tr>
+				<td><b>First Name:</b></td>
+				<td><input type="text" required pattern="[A-Za-z]+" title="You Can Insert Alphabets Only...!" placeholder="Enter First Name"></td>
+			</tr>
+			<tr>
+				<td><b>Middle Name:</b></td>
+				<td><input type="text" required pattern="[A-Za-z]+" title="You Can Insert Alphabets Only...!" placeholder="Enter Middle Name"></td>
+			</tr>
+			<tr>
+				<td><b>Last Name:</b></td>
+				<td><input type="text" required pattern="[A-Za-z]+" title="You Can Insert Alphabets Only...!" placeholder="Enter Last Name"></td>
+			</tr>
+			<tr>
+				<td><b>Mobile No:</b></td>
+				<td><input type="text" placeholder="Enter Mobile No" required pattern="[0-9]{10}" title="You Can Insert 10 Digits Only...!"></td>
+			</tr>
+            <tr>
+            	<td><b>Email Id:</b></td>
+            	<td><input type="email" placeholder="Enter Email Id" required pattern="[a-zA-Z0-9]+@[a-zA-z]+\.[a-zA-z]+"></td>
+            </tr>
+            <tr>
+            	<td><b>Password:</b></td>
+            	<td><input type="Password" placeholder="Enter Password" required pattern="[a-zA-z0-9!@#$%^&*_+=*,.]{6,8}" title="You Can Inset 6 to 8 Character Only...!"></td>
+            </tr>
+            <tr>
+            	<td><b>Date Of Birth:</b></td>
+            	<td><input type="date" required></td>
+            </tr>
+            <tr>
+            	<td><b>Date And Time:</b></td>
+            	<td><input type="datetime-local" required></td>
+            </tr>
+            <tr>
+				<td><b>Form No:</b></td>
+				<td><input type="number" min="1" max="5" required></td>
+			</tr>
+			<tr>
+				<td><b>Country:</b></td>
+				<td>
+				<select>
+					<option hidden>---Select Country---</option>
+					<option>India</option>
+					<option>Australia</option>
+					<option>England</option>
+					<option>Africa</option>
+					<option>USA</option>
+					<option>Chaina</option>
+					<option>Canada</option>
+					<option>Dubai</option>
+					<option>Pakistan</option>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td><b>Upload An Image:</b></td>
+				<td><input type="file" required></td>
+			</tr>
+			<tr>
+				<td><b>Gender:</b></td>
+				<td>
+					<input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+				</td>
+			</tr>
+			<tr>
+				<td><b>Hobbies:</b></td>
+				<td>
+					<input type="checkbox">Dancing
+					<input type="checkbox">Singing
+					<input type="checkbox">reading
+				</td>
+			</tr>
+			<tr>
+				<td><b>Colour:</b></td>
+				<td><input type="color"></td>
+			</tr>
+			<tr>
+				<td><b>Address:</b></td>
+				<td><textarea rows="5" cols="20"></textarea></td>
+			</tr>
+
+			<tr>
+				<td><input type="submit"></td>
+			</tr>
+            <tr>
+				<td><input type="reset"></td>
+			</tr>
+
+
+			
+		</table>
+	</form>
+	</center>
+
+</body>
+</html>
