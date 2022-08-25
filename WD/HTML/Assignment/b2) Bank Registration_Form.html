@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration_Form</title>
+	<link rel="icon" href="https://www.kindpng.com/picc/m/458-4580620_bank-icon-transparent-background-bank-icon-hd-png.png">
+	<style>
+		td
+		{
+			font-weight:bold;
+			color: white;
+			
+		}
+		body
+		{
+			background: url(https://www.fonewalls.com/wp-content/uploads/1440x2560-Background-HD-Wallpaper-525.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+
+		}
+
+		
+	</style>
+</head>
+<body>
+	<center>
+		<div style="border: solid ; width: 68% ;margin: auto;">
+		<form>
+			<table cellpadding="8px" style="background:linear-gradient(blue,rgba(0,0,0,0.5),green,rgba(0,0,0,0.5),red,rgba(0,0,0,0.5),purple,rgba(0,0,0,0.5));">
+				<th colspan="4" style="font-size: 25px; border-bottom: solid;width: 62%; background: linear-gradient(white,rgba(0,0,255,0.5));">Bank Registration Form</th>
+				<tr>
+
+
+					<td><li>Name:</li></td>
+					<td><input type="text" placeholder="First Name" required pattern="[A-Za-z]+" title="You Can Insert Alphabets Only...!"></td>
+					<td><input type="text" placeholder="Middle Name" required pattern="[A-Za-z]+" title="You Can Insert Alphabets Only...!"></td>
+					<td><input type="text" placeholder="Last Name" required pattern="[A-Za-z]+" title="You Can Insert Alphabets Only...!"></td>
+				</tr>
+				<tr>
+					<td><li>Age:</li></td>
+					<td><input type="number" min="1" max="100" placeholder="Age" required></td>
+					<td><li>Date of Birth:</li></td>
+	               <td><input type="date"></td>
+				</tr>
+                <tr>
+                	<td><li>Gender:</li></td>
+                	<td>
+                		<input type="radio" name="gender">Male
+                		<input type="radio" name="gender">Female
+                		<input type="radio" name="gender">Other
+
+                	</td>
+                </tr>
+                <tr>
+                	<td><li>Mobile No:</li></td>
+                	<td><input type="text" placeholder="Mobile No" required pattern="[0-9]{10}" title="You Can Insert 10 Digits Only...!s"></td>
+                	<td><li>Phone No:</li></td>
+                	<td><input type="text" placeholder="Mobile No" required pattern="[0-9]{11}" title="You Can Insert 11 Digits Only...!s"></td>
+                </tr>
+                <tr>
+                	<td><li>Email Id:</li></td>
+                	<td><input type="email" placeholder="Email Id" required pattern="[A-Za-z0-9!#$%^&*+-]+@[A-Za-z]+\.[A-Za-z]+"></td>
+                </tr>
+                <tr>
+                	<td><li>Password:</li></td>
+                	<td><input type="Password" placeholder="Password" pattern="[A-Za-z0-9!@#$%^&*_-=+]{6,8}" title="You Can Insert 6 to 8 Character only...!"></td>
+                </tr>
+                <tr>
+                	<td><li>Country:</li></td>
+                	<td>
+                		<select>
+                			<option hidden>---Select Country---</option>
+                			<option>India</option>
+                			<option>Australia</option>
+                			<option>England</option>
+                			<option>U.S.A</option>
+                			<option>Canada</option>
+                			<option>Africa</option>
+                			<option>China</option>
+                			<option>Pakistan</option>
+                			<option>Afghanistan</option>
+                			<option>London</option>
+                		</select>
+                	</td>
+                	<td><li>State:</li></td>
+                	<td>
+                		<select>
+                			<option hidden>---Select Stat---</option>
+                			<option>Gujrat</option>
+                			<option>Maharashtra</option>
+                			<option>Rajasthan</option>
+                			<option>UP</option>
+                			<option>Hariyana</option>
+                			<option>Bihar</option>
+                			<option>MP</option>
+                			<option>Tamilnadu</option>
+                			<option>Panjab</option>
+                			<option>Andhra Pradesh</option>
+                			<option>assam</option>
+                			<option>Kerala</option>
+                			<option>Himachal Pradesh</option>
+                		</select>
+                	</td>
+                </tr>
+                <tr>
+                	<td><li>City:</li></td>
+                	<td><input type="text" placeholder="City" required></td>
+                    <td><li>Pin Code:</li></td>
+                    <td><input type="text" pattern="[0-9]{6}" placeholder="Pin Code"></td>
+                </tr>
+                <tr>
+                	<td><li>Address:</li></td>
+                	<td>
+                		<textarea cols="20" rows="5" required></textarea>
+                	</td>
+                </tr>
+                <tr>
+                	<td><li>Bank Name:</li></td>
+                	<td>
+                		<select>
+                			<option hidden>---Select Bank---</option>
+                			<option>Bank of Baroda</option>
+                			<option>SBI</option>
+                			<option>PNB</option>
+                			<option>HDFC</option>
+                			<option>Bank of Maharashtra</option>
+                			<option>Canara Bank</option>
+                			<option>Central Bank of India</option>
+                			<option>Indian bank</option>
+                			<option>India Overseas bank</option>
+                		</select>
+                		<td><li>Branch Name:</li></td>
+                		<td><input type="text" placeholder="Branch Name"></td>
+                	</td>
+                </tr>
+                <tr>
+                	<td><li>Aadhar card No:</li></td>
+                	<td><input type="text" placeholder="Aadhar Card No" required pattern="[0-9]{12}"></td>
+                	<td><li>Pan Card No:</li></td>
+                	<td><input type="text" placeholder="Pan Card No"></td>
+                </tr>
+                <tr >
+                	<td colspan="2" align="right"><input type="submit"></td>
+                	<td><input type="reset"></td>
+                </tr>
+
+
+
+			</table>
+		</form>
+	</div>
+	
+
+	</center>
+
+</body>
+</html>
