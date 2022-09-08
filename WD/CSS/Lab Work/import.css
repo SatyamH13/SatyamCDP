@@ -1,0 +1,35 @@
+p:first-child
+
+		{
+			background: orange;
+		}
+		p:last-child{
+			background: blue;
+		}
+	    .x{
+	    	height: 200px;
+	    	width: 200px;
+	    	background: blueviolet;
+	    	transition: 2s;
+	    }
+	    .x:hover
+	    {
+	    	height: 300px;
+	    	width: 300px;
+	    	background:linear-gradient(red,green,yellow,purple);
+	    	border-radius: 300px;
+	    	box-shadow: 3px 0px 15px black,-3px 0px 15px black,0px 3px 15px black,0px -3px 15px black; 
+
+	    }
+        input{
+        	border: none;
+        	box-shadow: 0 0 20px green;
+        }
+        input:focus
+        {
+        	background: purple;
+        	color: white;
+        	height: 50px;
+        	width: 100%;
+        	font-size: 30px;
+        }

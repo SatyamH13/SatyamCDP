@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Transitions</title>
+    <style type="text/css">
+    	div{
+    		margin: auto;
+    	}
+    	.a{
+    		height:100px;
+    		width: 100px;
+    		background: purple;
+    		transition: width 2s;
+    	}
+    	.a:hover{
+    		width: 300px;
+    		
+    	}
+    	.b{
+    		height:100px;
+    		width: 100px;
+    		background: green;
+    		transition: height 2s;
+    		margin-top: 10px;
+    	}
+    	.b:hover{
+    		height: 300px;
+
+    	}
+    	.c{
+    		height: 100px;
+    		width: 100px;
+    		background: orange;
+    		border-radius: 100px;
+    		margin: 10px;
+    		margin: auto;
+    		transition: height 2s ,width 2s;
+    	}
+    	.c:hover{
+    		height: 300px;
+    		width: 300px;
+    	}
+    	.d{
+    		height: 100px;
+    		width: 100px;
+    		background: blue;
+    		border-radius:30px 0;
+    		transition: height 2s,width 2s,transform 2s;
+    	}
+    	.d:hover{
+    		height: 300px;
+    		width: 300px;
+    		transform:rotate(-180deg);
+    	}
+
+    </style>
+</head>
+<body>
+	<div class="a"></div>
+	<div class="b"></div>
+	<div class="c"></div>
+	<div class="d"></div>
+
+</body>
+</html>
