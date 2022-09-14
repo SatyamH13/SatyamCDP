@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>submenu</title>
+
+
+	<style type="text/css">
+		*{box-sizing: border-box;margin: 0px; padding: 0px0;}
+		.menu{
+			height: 80px;
+			width: 100%;
+			background:orange;
+			text-align: center;
+			line-height: 70px;
+			padding: 0 300px;
+			position: relative;
+
+
+		}
+		 .submenu li{
+			
+        list-style: none;
+        display: inline;
+        margin: 0 35px;
+        background: gray;
+        padding: 5px 20px;
+        float: left;
+
+
+
+		}
+		a{
+			text-decoration: none;
+		}
+	.dropdown{
+		background: green;
+		display: none;
+		position: absolute;
+		margin-top: 5px ;
+		margin-left: -20px;
+
+}
+	.menu1:hover .dropdown{
+		display: block;
+			}
+
+	</style>
+</head>
+<body>
+<div class="menu">
+	<ul class="submenu">
+		<li><a href="">Menu</a></li>
+		<li><a href="">About</a></li>
+		<li class="menu1">
+			<a href="">Service</a>
+			<ul class="dropdown">
+				<a>service1</a>
+				<a>service2</a>
+				<a>service3</a>
+				<a>service4</a>
+				<a>service5</a>
+			</ul>
+		</li>
+		<li><a href="">Contact</a></li>
+	</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>submenu1</title>
+	<style type="text/css">
+		*{box-sizing: border-box;padding: 0px;margin: 0px;}
+		.nav{
+			height: 50px;
+			width: 100%;
+			background: skyblue;
+			text-align: center;
+			line-height: 50px;
+			position: relative;
+
+		}
+		.submenu{
+			display: inline;
+			margin: 0 20px ;
+			background: gray;
+			padding: 12px 27px;
+			font-size: 25px;
+
+		}
+
+		.submenu a{
+			text-decoration: none;
+		}
+
+		.dropdown{
+			display: none;
+			position: absolute;
+			background: olive;
+			top: 50px;
+			left: 367px;
+
+		}
+		.submenu:hover .dropdown{
+			display: block;
+		}
+         
+        .a{
+        	
+        	left: 529px;
+
+        }
+        .b{
+           
+           left: 692px;
+        }
+        .c{
+        	left: 870px;
+        }
+
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<ul class="menu">
+			<li class="submenu">
+				<a href="">Home</a>
+				<ul class="dropdown">
+				<a href="">home 1 </a>
+				<a href="">home 2 </a>
+				<a href="">home 3 </a>
+				<a href="">home 4 </a>
+				<a href="">home 5 </a>
+				</ul>
+			</li>
+			<li class="submenu">
+				<a href="">About</a>
+			<ul class="dropdown a">
+				<a href="">about 1 </a>
+				<a href="">about 2 </a>
+				<a href="">about 3 </a>
+				<a href="">about 4 </a>
+				<a href="">about 5 </a>
+				</ul></li>
+			<li class="submenu">
+				<a href="">Contact</a>
+				<ul class="dropdown b">
+				<a href="">contact 1 </a>
+				<a href="">contact 2</a>
+				<a href="">contact 3</a>
+				<a href="">contact 4</a>
+				<a href="">contact 5</a>
+				</ul>
+			</li>
+			<li class="submenu">
+				<a href="">Service</a>
+				<ul class="dropdown c">
+				<a href="">Service 1</a>
+				<a href="">Service 2</a>
+				<a href="">Service 3</a>
+				<a href="">Service 4</a>
+				<a href="">Service 5</a>
+				</ul>
+			</li>
+		</ul>
+		
+	</div>
+
+
+</body>
+</html>
