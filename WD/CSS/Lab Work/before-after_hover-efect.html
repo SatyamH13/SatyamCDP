@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+	     div{
+	     	height: 100px;
+	     	width: 200px;
+	     	border-radius: 100px;
+	     	background: maroon;
+	     	margin: 200px auto;
+	     	text-align: center;
+	     	line-height: 100px;
+	     	font-size: 35px;
+	     	color: white;
+	     	font-weight: bold;
+	     	position: relative;
+	     	overflow: hidden;
+	     	z-index: 0;
+	     	
+	     }
+	     div::after{
+	     	content: "";
+	     	height: 100px;
+	     	width: 200px;
+	     	background:gray;
+	     	transform: translate(-100%,0);
+	     	position: absolute;
+	     	top: 0;
+	     	left: 0;
+	     	transition: 4s;
+	     	z-index: -1;
+	     	}
+	     div::before{
+	     	content: "";
+	     	height: 100px;
+	     	width: 200px;
+	     	background: gray;
+	     	transform: translate(100%,0);
+	     	position: absolute;
+	     	top: 0;
+	     	left: 0;
+	     	transition: 4s;
+	     	z-index: -1;
+	     }	
+	     div:hover:after{
+	     	transform: translate(100%,0);
+
+	     }
+	     div:hover:before{
+	     	transform: translate(-100%,0);
+	     }
+	</style>
+</head>
+<body>
+	<div>Hello</div>
+
+</body>
+</html>
