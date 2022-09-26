@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>product_card</title>
+	<style type="text/css">
+		*{box-sizing: border-box;margin: 0px;padding: 0px;}
+		.box{
+			height: 400px;
+			width: 100%;
+			
+			display: flex;
+			margin: 100px 0;
+			padding: 0 100px;
+		}
+		.box1{
+			width: 25%;
+			margin: 0 20px;
+			text-align: center;
+			box-shadow: 0 0 7px gray;
+			position: relative;
+
+		}
+		img{
+			margin-top: 40px;
+		}
+		.box1-1{
+			height: 50%;
+			background: aliceblue;
+			position: relative;
+
+		}
+		.box1-2{
+			height:10%;
+			width: 100%;
+			background: black;
+			line-height: 40px;
+			font-family: sans-serif;
+			color: white;
+			position: absolute;
+			top: 0;
+			transition: 1s;
+			opacity: 0;
+
+			
+		}
+        .box1:hover .box1-2{
+		  animation: animate 1s forwards;
+		
+
+		}
+		@keyframes animate{
+			from{top: 0;opacity: 0;}
+			to{top: 50%;opacity: 1;}
+		}
+
+		.box1-3{
+			height: 40%;
+			font-family: sans-serif;
+			
+			
+		}
+		.box1-3 .name{
+			color: #fc636b;
+			margin-top: 60px;
+			font-weight: bold;
+		}
+
+		.a{
+          position: absolute;
+          top: 0;
+          left: 200px;
+          background: #fc636b;
+          padding:3px 10px;
+          color: white;
+          font-family: sans-serif;
+
+		}
+		button{
+			margin-top: 15px;
+			height: 35px;
+			width: 200px;
+			border: none;
+			background: #2fdab8;
+			color: white;
+			font-family: sans-serif;
+			position: relative;
+			transition: 0.5s;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="box1">
+			<div class="box1-1"><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="80%" width="70%"><span class="a">New</span></div>
+			<div class="box1-2">QUICK VIEW</div>
+			<div class="box1-3">
+				<p class="name">Formal Blue Shirt</p><br>
+				<p>$45.99 <span style="text-decoration: line-through;margin-left: 7px;color: gray;">$69.71</span></p>
+				<button>ADD TO CART</button>
+			</div>
+		</div>
+		<div class="box1">
+			<div class="box1-1">
+				<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg"height="80%" width="70%"><span class="a">New</span>
+			</div>
+			<div class="box1-2">QUICK VIEW</div>
+			<div class="box1-3">
+				<p class="name">Gabi Full Sleeve Sweatshirt</p><br>
+				<p>$45.99 <span style="text-decoration: line-through;margin-left: 7px;color: gray;">$69.71</span></p>
+				<button>ADD TO CART</button>
+			</div>
+		</div>
+		<div class="box1">
+			<div class="box1-1">
+				<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg"height="80%" width="70%"><span class="a">New</span>
+			</div>
+			<div class="box1-2">QUICK VIEW</div>
+			<div class="box1-3">
+				<p class="name">Dark Blue Track Pants</p><br>
+				<p>$80.99 <span style="text-decoration: line-through;margin-left: 7px;color: gray;">$89.71</span></p>
+				<button>ADD TO CART</button>
+			</div>
+		</div>
+		<div class="box1">
+			<div class="box1-1">
+				<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg"height="80%" width="70%"><span class="a">New</span>
+			</div>
+			<div class="box1-2">QUICK VIEW</div>
+			<div class="box1-3">
+				<p class="name">Round Neck Black T-Shirt</p><br>
+				<p>$190.99 <span style="text-decoration: line-through;margin-left: 7px;color: gray;">$159.71</span></p>
+				<button>ADD TO CART</button>
+			</div>
+		</div>
+		<div></div>
+	</div>
+
+</body>
+</html>

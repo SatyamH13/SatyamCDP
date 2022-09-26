@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>basic_animation</title>
+	<style type="text/css">
+		.x{
+			height: 200px;
+			width: 200px;
+			background: gray;
+			margin: 150px auto;			animation-name: animation;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+
+		}
+
+		/*@keyframes animate
+		{
+			from{background: gray;}
+			to{background: orange;}
+		}*/
+
+		@keyframes animation
+		{
+			0%{background: gray;}
+			20%{background: red; height: 250px;width: 250px;}
+			40%{background: gray; height:250px;width: 250px;border-radius: 50%;}
+			60%{background: orange;height: 100px;width: 300px; border-radius: 50%;}
+			80%{background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_2.jpg); background-size: 100% 100%;}
+			100%{height: 0px; width: 0px;}
+		}
+	</style>
+</head>
+<body>
+<div class="x"></div>
+</body>
+</html>
