@@ -49,7 +49,7 @@
 .header2{
 	height: auto;
 	width: 100%;
-	background: lavender;
+	background: white;
 	display: flex;
 	flex-wrap: wrap;
 
@@ -73,7 +73,7 @@
 
 .header2 .logo{
     height: 120px;
-    width: 33.33%;
+    width: 40%;
     text-align: left;
     font-size: 55px;
     padding-top: 22px;
@@ -95,63 +95,100 @@
 }
 .header2 .icons{
     height: 120px;
-    width: 33.33%;
-
+    width: 26.67%;
     text-align: center;
     line-height: 120px;
     display: flex;
+
 }
-.header2 .icons .a{
-	width: 25%;
-	text-align: right;
+.header2 .icons .i4{
+	width: 100%;
+	display: flex;
+
+
 }
-.header2 .icons .rotate{
-	width: 18.75%;
-	margin-right: -30px;
+.header2 .icons .share-on{
+     width: 30%;
+}
+.header2 .icons .ftil{
+	height: 40px;
+	width: 40px;
+	margin: 40px 4px;
 	position: relative;
+   
+}
+.header2 .icons .ftil .back i{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 12px 15px;
+	color: white;
+}
+.header2 .icons .ftil .back .bb1{
+	background: #3b5998;
+}
+.header2 .icons .ftil .back .bb2{
+	background: #1877f2;
+	padding: 12px 12px;
+}
+.header2 .icons .ftil .front .ff2{
+	padding: 12px 12px;
+}
+.header2 .icons .ftil .back .bb3{
+	padding: 12px 13px;
+	background: #c32aa3;
+}
+.header2 .icons .ftil .front .ff3{
+   padding: 12px 13px;
+}
+.header2 .icons .ftil .back .bb4{
+	background:#bd081c ;
+	 padding: 12px 13px;
+}
+.header2 .icons .ftil .front .ff4{
+   padding: 12px 13px;
+}
+.header2 .icons .ftil .front i{
+	background:white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 12px 15px;
 }
 
-.header2 .icons span{
-	font-size: 17px;
+
+
+.header2 .icons .l{
+	margin-right: 50px;
 }
-.header2 .icons .rotate .front .f{
-	background: #3b5998;
-	padding: 10px 12px;
-	transition: 1s;
+
+.header2 .icons .front{
+	height: 40px;
+	width: 40px;
 	position: absolute;
-	top: 42px;
+    top: 0;
+    left: 0;
+    transform: rotateX(180deg);
+    transition: 1s;
+    backface-visibility: hidden;
+}
+.header2 .icons .ftil:hover .front{
+	transform: rotateX(0deg);
+}
+
+.header2 .icons .back{
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 0;
 	left: 0;
+	transform: rotateX(0deg);
+	transition: 1s;
+	backface-visibility: hidden;
+	
 	
 
-
 }
-.header2 .icons .rotate .front .t{
-    padding: 10px 12px;
-    background: #1877f2;
-    position: absolute;
-    top: 42px;
-    left: 0;
-
+.header2 .icons .ftil:hover .back{
+	transform: rotateX(180deg);
 }
-.header2 .icons .rotate .front .i{
-	background:#c32aa3;
-	padding: 10px 12px;
-    position: absolute;
-    top: 42px;
-    left: 0;
-}
-.header2 .icons .rotate .front .l{
-    padding: 10px 12px;
-    background:  #bd081c;
-    position: absolute;
-    top: 42px;
-    left: 0;
-} 
-.header2 .icons .rotate .back .f1,.t1,.i1,.l1{
-	padding:10px 12px; 
-	position: absolute;
-	background: white;
-	top: 42px;
-	left: 0;
-}
-

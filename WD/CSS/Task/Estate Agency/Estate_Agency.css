@@ -1,0 +1,409 @@
+*{box-sizing: border-box;margin: 0;padding: 0;}
+.nav{
+	height:auto;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	box-shadow: 0 0 8px gray;
+   position: fixed;
+   top: 0;
+   background: white;
+   z-index: 5;
+
+	
+}
+.nav .logo{
+	height: 100px;
+	width:25%;
+	font-family: sans-serif;
+	font-size: 2rem;
+	font-weight: 600;
+	text-align: right;
+	line-height: 100px;
+}
+.nav .logo span{
+	color: #2eca6a;
+}
+.nav .menubar{
+	height: 100px;
+	width:60% ;
+	text-align: center;
+	padding-top: 40px;
+	background: white;
+
+}
+.nav .menubar .dropdown{
+	display: inline;
+	margin-right: 25px;
+}
+.nav .menubar .dropdown a{
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 1.2rem;
+	color: black;
+	padding: 8px 0px;
+    position: relative;
+}
+.nav .menubar .dropdown .a::before{
+	content: "";
+	height: 3px;
+	width: 0%;
+	background: #2eca6a;
+	position: absolute;
+	top: 100%;
+	left: 0;
+    transition: 0.5s;	
+}
+.nav .menubar .dropdown .pages::after{
+    content: "\25BC";
+}
+
+.nav .menubar .dropdown .a:hover::before
+{
+	width: 100%;
+}
+
+.nav .search{
+	width: 15%;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.nav .search i{
+	background:#2eca6a;
+	padding: 12px;
+	color: white;
+
+}
+.nav .search i:hover{
+	background: green;
+}
+
+.content1{
+	height:500px;
+	width: 100%;
+	background: url(https://wallpaperaccess.com/full/1700222.jpg);
+	filter: contrast(110%);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-top: 100px;
+	padding: 50px 120px;
+
+	
+}
+
+.content1 .details{
+	height:auto;
+	width: 700px;
+   font-family: sans-serif;
+   color: white;
+}
+.content1 .details .name{
+	margin-top: 30px;
+	font-size: 70px;
+	font-weight: bold;
+  
+}
+.content1 .details .name .n1{
+	color:#2eca6a;
+}
+.content1 .details .rent{
+	margin-top:50px;
+	border: 2px solid #2eca6a;
+	font-family: sans-serif;
+	font-size: 20px;
+	width: 200px;
+	text-align: center;
+	padding: 20px;
+	border-radius: 100px;
+
+}
+.content1 .details .rent a{
+	text-decoration: none;
+	color: white;
+}
+.heading{
+	height: 200px;
+	width: 100%;
+	background:white;
+	font-size: 40px;
+	font-weight: bold;
+	font-family: sans-serif;
+	padding:100px 120px;
+}
+.content2{
+	height:auto;
+	width: 100%;
+	display: flex;
+
+	font-family: sans-serif;
+}
+.content2 .c1,.c2,.c3{
+	height:300px;
+	width: 33.33%;
+    margin: 0 42px;
+}
+.content2 .c1{
+	margin-left: 120px;
+	text-align: left;
+	padding-top: 20px;
+	position: relative;
+}
+.content2 .c1 i{
+	font-size: 60px;
+	border: 5px solid #2eca6a;
+	padding: 15px 40px;
+	
+    
+}
+.content2 span{
+	font-size: 40px;
+	font-weight: bold;
+	position: absolute;
+	top: 45px;
+	left: 120px;
+}
+.content2 .info{
+	margin-top: 30px;
+	color: gray;
+}
+.content2 .c3{
+	margin-right: 120px;
+}
+.content2  .readmore{
+	margin-top: 20px;
+}
+.content2 .readmore a{
+	text-decoration: none;
+	color: black;
+}
+.content2 .readmore .grater::after{
+    content: "\276F";
+}
+
+.content2 .c2{
+	text-align: left;
+	padding-top: 20px;
+	position: relative;
+}
+.content2 .c2 i{
+	font-size: 60px;
+	border: 5px solid #2eca6a;
+	padding: 15px 40px;
+}
+
+.content2 .c3{
+	padding-top: 20px;
+	position: relative;
+}
+.content2 .c3 i{
+	font-size: 60px;
+	border: 5px solid #2eca6a;
+	padding: 15px 40px;
+}
+.content3{
+	height:auto;
+	width: 100%;
+	background: white;
+	display: flex;
+	font-family: sans-serif;
+}
+.content3 .c1{
+    height: 500px;
+    width: 33.3%;
+    margin: 0 10px;
+  background: orange;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+.content3 .c1 img{
+    transition: 1s;
+}
+.content3 .c1:hover img{
+    transform: scale(1.2);
+}
+.content3 .cc1{
+	margin-left: 100px;
+
+}
+.content3 .cc3{
+	margin-right: 100px;
+}
+.content3 .c1 .info1{
+	height: 200px;
+	width: 95%;
+	position: absolute;
+	top: 60%;
+	right: 0%;
+	transition: 1s;
+	padding-top:20px ;
+}
+.content3 .c1:hover .info1{
+	top: 45%;
+}
+.content3 .c1 .info1 .line{
+	text-decoration: none;
+	color: white;
+}
+.content3 .c1 .info1 .btn{
+	margin-top: 20px;
+	border: 2px solid #2eca6a;
+	width: 150px;
+	text-align: center;
+	border-radius: 100px;
+
+}
+.content3 .c1 .info1 .click{
+	margin-top: 10px;
+	font-size: 18px;
+}
+.content3 .c1 .info1 .click::after{
+	content: "\276F";
+}
+.content3 .c1 .info2{
+	height: 80px;
+	width: 100%;
+	background:#2eca6a;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	transition: 1s;
+} 
+.content3 .c1:hover .info2{
+	top: 85%;
+	padding-top: 10px;
+}
+.content3 .c1 .info2 .t{
+	list-style: none;
+	display: inline;
+	margin:0 20px;
+	color: black;
+
+}
+.content3 .c1 .info2 .d{
+	list-style: none;
+	display: inline;
+	color: white;
+}
+.d1{
+	margin: 0 20px;
+}
+.d2{
+	margin-left: 10px;
+}
+.d3{
+	margin-left: 70px;
+}
+.d4{
+	margin-left: 70px;
+}
+
+.content4{
+	height: auto;
+	width: 100%;
+	padding: 0 100px;font-family: sans-serif;
+
+}
+
+.content4 .content4-1{
+	height: auto;
+	width: 100%;
+	display: flex;
+
+}
+
+.content4 .content4-1 .c1{
+	height: 400px;
+	width: 33.33%;
+	margin: 0 20px;
+	position: relative;	
+
+}
+
+.content4 .content4-1 .cc1{
+	background: url(https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/agent-4.jpg);
+	background-size: 100% 100%;
+}
+.content4 .content4-1 .cc2{
+	background: url(https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/agent-1.jpg);
+	background-size: 100% 100%;
+
+}
+.content4 .content4-1 .cc3{
+	background: url(https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/agent-5.jpg);
+	background-size: 100% 100%;
+}
+
+.content4 .content4-1 .c1 .c1-1{
+	height: 400px;
+	width: 100%;
+     background: #2eca6a;
+	opacity: 0.9;
+	display: none;
+	transition: 1s;
+}
+.content4 .content4-1 .c1:hover .c1-1{
+	display: block;
+}
+.content4 .content4-1 .c1 .c1-2{
+	height: 400px;
+	width: 90%;
+	position: absolute;
+	top: 0;
+	right:0;
+	opacity: 0;
+	transition: 0.5s;
+}
+.content4 .content4-1 .c1:hover .c1-2{
+    opacity: 1;
+}
+.content4 .content4-1 .c1:hover .c1-2{
+   
+}
+.content4 .content4-1 .c1 .c1-2  .line{
+	text-decoration: none;
+	color: black;
+
+}
+.content4 .content4-1 .c1 .c1-2 .name .line:hover{
+	text-decoration: underline;
+}
+.content4 .content4-1 .c1 .c1-2 .name{
+	transition: 0.5s;
+	opacity: 0;
+}
+.content4 .content4-1 .c1:hover .name{
+	margin-top: 30px;
+	opacity: 1;
+}
+.content4 .content4-1 .c1 .c1-2 .details{
+	margin-top: 20px;
+	transition: 0.3s;
+	color: lightgray;
+}
+.content4 .content4-1 .c1:hover .details{
+	margin-top: 30px;
+}
+.content4 .content4-1 .c1 .c1-2 .phone{
+	position: absolute;
+	top: 55%;
+}
+.content4 .content4-1 .c1 .c1-2 .email{
+	position: absolute;
+	top: 65%;
+}
+.content4 .content4-1 .c1 .c1-2 .icon {
+	position: absolute;
+	top: 95%;
+	left:20%
+	opacity: 0;
+	transition: 0.5s;
+}
+.content4 .content4-1 .c1:hover .icon{
+    opacity: 1;
+    top: 85%;
+}
+
+
+
