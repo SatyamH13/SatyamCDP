@@ -35,7 +35,42 @@
 .nav .menubar .dropdown{
 	display: inline;
 	margin-right: 25px;
+	position: relative;
+	padding: 40px 0;
+	transition: 1s;
+
+
 }
+.nav .menubar .dropdown .submenu{
+	opacity: 0;
+	position: absolute;
+	list-style: none;
+	background: white;
+	width: 200px;
+	left: 0;
+    transition: 0.5s;
+	border-top: 4px solid #2eca6a;
+	top: 110%;
+	box-shadow: 0 0 10px gray;
+
+
+
+}
+.nav .menubar .dropdown .submenu li{
+	margin: 20px 10px; 
+	text-align: left;
+
+}
+.nav .menubar .dropdown .submenu li a:hover{
+	color:#2eca6a ;
+}
+.nav .menubar .dropdown:hover .submenu
+{
+    top: 80%;
+	opacity: 1;
+
+}
+
 .nav .menubar .dropdown a{
 	text-decoration: none;
 	font-family: sans-serif;
