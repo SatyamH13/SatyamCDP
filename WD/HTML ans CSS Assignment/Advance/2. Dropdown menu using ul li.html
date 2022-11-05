@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{box-sizing: border-box;margin: 0;padding: 0;}
+		.nav{
+            
+            width: 80%;
+            background: tomato;
+            margin: 50px auto;
+            display: flex;
+            line-height: 50px;
+		}
+		.nav .a{
+			height: 50px;
+			width:90%;
+		}
+		.nav .a .menu .option{
+			display: inline;
+			padding: 16px 0;
+			position: relative;
+		}
+		.nav .a .menu .option:hover{
+            background: darkred;
+		}
+		.nav .a .menu .option a{
+			text-decoration: none;
+			font-size: 18px;
+			margin: 0 30px;
+			color: white;
+		}
+		.nav .a .menu .option .dropdown{
+			position: absolute;
+			width: 200px;
+			top: 102%;
+			left: 0;
+			background: tomato;
+			display: none;
+			box-shadow: 0 0 10px black;
+		}
+		.nav .a .menu .option:hover .dropdown{
+			display: block;
+		}
+		.nav .a .menu .option .dropdown .d1{
+			list-style: none;
+		}
+		.nav .a .menu .option .dropdown .d1:hover{
+			background: darkred;
+		}
+		.nav .a .menu .option .dropdown .d1 .dropdown2{
+			width: 200px;
+			display: none;
+			position: absolute;
+			top: 67%;
+			left: 100%;
+			background: tomato;
+			box-shadow: 0 0 10px black;
+		}
+		.nav .a .menu .option .dropdown .d1:hover .dropdown2{
+			display: block;
+		}
+		.nav .a .menu .option .dropdown .d1 .dropdown3{
+			background: tomato;
+			position: absolute;
+			top: 33%;
+			left: 100%;
+			display: none;
+			box-shadow: 0 0 10px black;
+			width: 200px;
+		}
+		.nav .a .menu .option .dropdown .dropdown2 .d1:hover .dropdown3{
+	        display: block;
+		}
+        
+		
+
+
+		.nav .b{
+			width: 10%;
+			font-size: 17px;
+			color: white;
+			text-align: center;
+			
+		}
+		.nav .b:hover{
+			background: darkred;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<div class="a">
+			<ul class="menu">
+				<li class="option"><a href="">Home</a></li>
+				<li class="option"><a href="">Profile</a></li>
+
+				<li class="option">
+					<a href="">Message &diams;</a>
+					<ul class="dropdown">
+						<li class="d1"><a href="">NET</a></li>
+						<li class="d1"><a href="">Java</a></li>
+
+						<li class="d1">
+							<a href="">Ms Office &nbsp;&nbsp; &diams;</a>
+							<ul class="dropdown2">
+								<li class="d1"><a href="">World</a></li>
+								<li class="d1">
+									<a href="">Excel &nbsp;&nbsp; &diams;</a>
+
+									<ul class="dropdown3">
+										<li class="d1"><a href="">Basic</a></li>
+										<li class="d1"><a href="">Advance</a></li>
+									</ul>
+
+								</li>
+								<li class="d1"><a href="">Power Point</a></li>
+							</ul>
+
+						</li>
+
+					</ul>
+				</li>
+
+				<li class="option"><a href="">Course</a></li>
+			</ul>
+		</div>
+		<div class="b">Admin</div>
+	</div>
+</body>
+</html>
