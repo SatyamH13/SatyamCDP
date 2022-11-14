@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		div{
+			height: 300px;
+            width: 300px;
+            background: red;
+            margin:150px auto;
+            transform: rotate(45deg);
+            position: relative;
+            animation: animate 0.5s infinite;
+
+		}
+		div:after{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: -50%;
+			height: 300px;
+			width: 300px;
+			border-radius: 50%;
+			background: red;
+			 animation: animate 0.5s infinite;
+		}
+		div:before{
+			content: "";
+			position: absolute;
+			top: -50%;
+			left: 0%;
+			height: 300px;
+			width: 300px;
+			border-radius: 50%;
+			background: red;
+			 animation: animate 0.5s infinite;
+		}
+
+		@keyframes animate
+		{
+			from{height: 300px;width: 300px;}
+			to{height: 330px;width: 330px;}
+
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+
+</body>
+</html>

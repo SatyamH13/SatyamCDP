@@ -175,7 +175,7 @@
 
 .header3 .h2 .menubar .dropdown .submenu{
 	position: absolute;
-	width: 220px;
+	width: 230px;
 	background: white;
 	box-shadow: 0 0 2px gray;
 	text-align: left;
@@ -216,7 +216,7 @@
 	display: none;
 	position: absolute;
 	top: 0;
-	left: 95%;
+	left: 100%;
 	box-shadow: 0 0 5px gray;
 	background: white;
 	width: 230px;
@@ -310,7 +310,7 @@
 }
 .content1 p{
 	word-spacing: 1px;
-	font-size: 18px;
+	font-size: 18px	;
 	margin-top: 25px;
 
 }
@@ -629,7 +629,7 @@ overflow: hidden;
 .heading2{
 	text-align: center;
 	padding-bottom: 30px;
-	font-size: 40px;
+	font-size: 40px; 
 }
 .heading2 p{
 	font-size: 50px;
