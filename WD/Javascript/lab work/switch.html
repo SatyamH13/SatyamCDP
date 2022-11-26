@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<input type="" id="input" name="" >
+<button onclick="chk()">check</button>
+ <script type="text/javascript">
+ 	
+  
+  function chk()
+  {
+     a=10,b=20;
+   var choice =document.getElementById('input').value;  
+  
+
+    switch(choice)
+    {
+    	case '+': document.write(a+b);
+    	break;
+    	
+    	case '-': document.write(a-b);
+    	break;
+
+    	case '*': document.write(a*b);
+    	break;
+
+    	case '/':document.write(a/b);
+    	break;
+
+    	default:document.write("Invelid choice");
+    }
+
+
+}
+ </script>
+
+</body>
+</html>

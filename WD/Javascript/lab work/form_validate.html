@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+  
+  <form>
+  	<table>
+  		<tr>
+  		
+  		<td>Name : </td>
+  		<td><input type="text" name="" id="nm"></td> 
+  	    
+  	    </tr>
+
+  	    <tr>
+  		
+  		<td>Email : </td>
+  		<td><input type="text" name="" id="em"></td> 
+  	    
+  	    </tr>
+
+  	    <tr>
+  		
+  		<td>Mobile : </td>
+  		<td><input type="text" name="" id="mb"></td> 
+  	    
+  	    </tr>
+
+  	    <tr>
+  		
+  		<td>Password : </td>
+  		<td><input type="text" name="" id="pd"></td> 
+  	    
+  	    </tr>
+  	    <tr>
+  		
+  		<td>confirm password : </td>
+  		<td><input type="text" name="" id="cp"></td> 
+  	    
+  	    </tr>
+
+  	    <tr>
+  	    	<td><input type="submit" name="" onclick=" return chk()"></td>
+  	    </tr>
+
+  	</table>
+  	
+  </form>
+
+  <script type="text/javascript">
+  	
+  	nm=document.getElementById('nm');
+    em=document.getElementById('em');
+    mb=document.getElementById('mb');
+    pd=document.getElementById('pd');
+    cp=document.getElementById('cp');
+    text = /^[a-zA-Z]+$/;
+    email = /^[a-zA-Z0-9._-]+@[a-zA-Z]+\.[a-zA-Z]{2,3}$/;
+    mobile = /^[0-9]{10}$/;
+    password = /^[a-zA-Z0-9!@#$%^&*_=+-]{6,8}$/
+   
+
+  	function chk()
+  	{
+  		if(nm.value == "")
+  		{
+  			alert("Name is required");
+  			return false;
+  		}
+  		if(!text.test(nm.value))
+  		{
+  			alert("Alphabets only....!");
+  			return false;
+  		}
+  		if(em.value == "")
+  		{
+  			alert("Email is required")
+  			return false;
+  		}
+  		if(!email.test(em.value))
+  		{
+  			alert("please follow the email pattern (exp123@gmail.com)")
+  			return false;
+  		}
+  		if(mb.value == "")
+  		{
+  			alert("Mobile number is required")
+  			return false;
+  		}
+  		if(!mobile.test(mb.value))
+  		{
+  			alert("you can insert Numbers only and 10 digits only")
+  			return false;
+  		}
+  		if(pd.value == "")
+  		{
+  			alert("Password is required")
+  			return false;
+  		}
+  		if(!password.test(pd.value))
+  		{
+  			alert("you can insert 6 to 8 character only")
+  			return false;
+  		}
+  		if(cp.value != pd.value)
+  		{
+  			alert("Password do not match")
+  			return false;
+  		}	
+  	}
+
+
+  </script>
+
+</body>
+</html>

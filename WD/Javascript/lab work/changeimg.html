@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<img src="https://cdn.pixabay.com/photo/2017/11/09/01/49/ferrari-458-spider-2932191__340.jpg" height="200px" width="300px" id="img">
+<button onclick="changeimg()">Change image</button>
+
+<script type="text/javascript">
+    
+function changeimg()
+{
+   var img=document.getElementById("img");
+
+
+if(img.src == ("https://cdn.pixabay.com/photo/2017/11/09/01/49/ferrari-458-spider-2932191__340.jpg"))
+  { 
+     img.src = "https://collectingcars.imgix.net/013019/DSC-5731-1.jpg?w=1263&fit=fillmax&crop=edges&auto=format,compress&cs=srgb&q=85";
+   
+  }
+  else if( img.src == ("https://collectingcars.imgix.net/013019/DSC-5731-1.jpg?w=1263&fit=fillmax&crop=edges&auto=format,compress&cs=srgb&q=85"))
+  {
+   img.src = "https://c8.alamy.com/comp/2H5KAYP/caramulo-portugal-04-september-2021-red-alfa-romeo-4c-in-caramulo-motorfestival-2021-2H5KAYP.jpg"
+  }
+
+else if(img.src == ("https://c8.alamy.com/comp/2H5KAYP/caramulo-portugal-04-september-2021-red-alfa-romeo-4c-in-caramulo-motorfestival-2021-2H5KAYP.jpg"))
+{  
+ img.src = "https://cdn.pixabay.com/photo/2017/11/09/01/49/ferrari-458-spider-2932191__340.jpg";  
+}
+
+
+
+}
+</script>
+
+</body>
+</html>

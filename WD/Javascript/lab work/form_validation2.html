@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<table>
+	<tr>
+		<td>Name</td>
+		<td>
+			<input type="text" name="" id="nm"return onblur="chk()">
+			<span id="a"></span>
+		</td>
+	</tr>
+	<tr>
+		<td>mobile</td>
+		<td>
+			<input type="text" name="" id="mb"return onblur="chk()">
+            <span id="b"></span>
+		</td>
+	</tr>
+	<tr>
+		<td>Password</td>
+		<td>
+			<input type="text" name="" id="pwd"return onblur="chk()">
+			<span id="c"></span>
+		</td>
+	</tr>
+  </table>
+
+  <script type="text/javascript">
+  	  
+  	    
+     function chk()
+     {
+
+      var name = document.getElementById("nm");
+  	  var mobile = document.getElementById("mb");
+  	  var password = document.getElementById("pwd");
+  	  var a = document.getElementById("a");
+  	  var b = document.getElementById("b");
+  	  var c = document.getElementById("c");
+         if(name.value == "")
+         {
+         	a.innerHTML = "* Name is Required...!";
+         	a.style.color = "red";
+         	name.style.border = "2px solid red";
+         	return false;
+         
+         }
+         else
+         {
+           a.innerHTML = "";
+           name.style.border = "2px solid green";	
+         }
+
+          if(mobile.value == "")
+         {
+         	b.innerHTML = "* Name is Required...!";
+         	b.style.color = "red";
+         	mobile.style.border = "2px solid red";
+         	return false;
+         
+         }
+         else
+         {
+           b.innerHTML = "";
+           mobile.style.border = "2px solid green";	
+         }
+          if(password.value == "")
+         {
+         	c.innerHTML = "* Name is Required...!";
+         	c.style.color = "red";
+         	password.style.border = "2px solid red";
+         	return false;
+         
+         }
+         else
+         {
+           c.innerHTML = "";
+           password.style.border = "2px solid green";	
+         }
+     }
+
+
+  </script>
+
+
+
+</body>
+</html>
