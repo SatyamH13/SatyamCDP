@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<div id="parent">
+	<p id="para">para 1</p>
+	<p>para 2</p>
+	<p>para 3</p>
+</div>
+
+<script type="text/javascript">
+	h1 = document.createElement("h1")
+	text = document.createTextNode("this is h1 tag")
+
+	h1.append(text)
+   div =  document.getElementById('parent')
+   p = document.getElementById('para')
+
+   div.insertBefore(h1,p)
+    
+</script>
+
+
+</body>
+</html>

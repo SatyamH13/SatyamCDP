@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		
+		.x{
+			background: gray;
+
+		}
+
+	</style>
+</head>
+<body>
+
+	<form>
+		
+		<tr>
+			
+			<input type="radio" name="gender" id="male">Male
+			<input type="radio" name="gender" id="female">Female
+			<input type="submit" name="" id="btn">
+
+		</tr>
+
+	</form>
+
+	<script type="text/javascript">
+		
+    m = document.getElementById("male")
+    f= document.getElementById("female")
+    b = document.getElementById("btn")
+    b.addEventListener("click",chek)
+
+    function chek()
+    {
+    	if(!m.checked && !f.checked)
+    	{
+
+    		alert("please select your gender").style.color = "orange"
+   
+    	}
+    }
+
+	</script>
+
+</body>
+</html>

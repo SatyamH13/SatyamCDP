@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<style type="text/css">
+		*{box-sizing: border-box;margin: 0;padding: 0; font-family: sans-serif;}
+		.content{
+			width: 100%;
+			height: 100vh;
+			background: gray;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.btn{
+			padding: 10px 40px;
+			border: none;
+			cursor: pointer;
+			border-radius: 30px;
+
+		}
+		.popup{
+			width: 300px;
+			background:#fff;
+			border-radius: 6px;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%,-50%) scale(0.1);
+			text-align: center;
+			padding: 0 30px 30px ;
+			color: #333;
+			visibility: hidden;
+			transition: transform 0.4s,top 0.4s;
+		}
+        .x{
+        	visibility: visible;
+        	top: 50%;
+        	transform: translate(-50%,-50%); scale(1.0);
+        }
+
+		.popup img{
+			margin-top: -50px;
+		}
+		h2{
+			font-size: 38px;
+		}
+		p{
+			margin-top: 10px;
+		}
+		.popup button{
+			width: 100%;
+			margin-top: 30px;
+			padding: 10px 0;
+			color: white;
+			font-weight: bold;
+			background: #6fd649;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+		}
+	</style>
+<body>		
+<div class="content">
+	<button type="submit" class="btn" onclick="a()">submit</button>
+	<div class="popup" id="btn1">
+		<img src="https://www.nicepng.com/png/full/820-8204132_download-now-check-button-png.png" height="120px" width="100px">
+		<h2>Thank You!</h2>
+		<p>Your Details has successfully submitted. Thanks!</p>
+		<button type="button" onclick="b()">OK</button>
+	</div>
+</div>
+
+<script type="text/javascript">
+	btn1 = document.getElementById("btn1")
+	btn2 = document.getElementById("btn2")
+	function a()
+	{
+      btn1.classList.add("x")
+	}
+	function b()
+	{
+      btn1.classList.remove("x")
+	}
+</script>
+</body>
+</html>

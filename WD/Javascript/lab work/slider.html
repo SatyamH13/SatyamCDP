@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style type="text/css">
+	*{box-sizing: border-box;margin: 0;padding: 0;}
+  div{
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    position: relative;
+  }
+ div img{
+    position: absolute;
+    top: 0;
+    left:0;
+    
+  }
+  .x{
+  	animation: animate 2s forwards;
+  }
+
+  @keyframes animate
+  {
+  	from{transform:scale(1.0);}
+  	to{transform:scale(1.5);}
+  }
+
+</style>
+
+</head>
+
+<body>
+	<div>
+  <img src="https://imageio.forbes.com/specials-images/imageserve/5f962df3991e5636a2f68758/0x0.jpg?format=jpg&crop=812,457,x89,y103,safe&width=1200" height="400px" width="100%" class="i1" >
+ <img src="https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960" height="400px" width="100%" class="i1">
+ <img src="https://i.ytimg.com/vi/dip_8dmrcaU/maxresdefault.jpg" height="400px" width="100%" class="i1">
+ <img src="https://s3images.zee5.com/wp-content/uploads/2021/09/fastest-cars-world-2021-luxe-digital@2x.jpeg" height="400px" width="100%" class="i1">
+ </div>
+
+
+ <script type="text/javascript">
+   	
+index = 0;
+
+  function slider()
+  {
+  	
+
+   var	img = document.getElementsByClassName('i1');
+
+ 	for( var a=0;a<img.length;a++)
+ 	{
+ 		img[a].style.display = "none"; 
+ 	}
+
+ 	img[index].style.display = "block";
+ 	img[index].classList.add('x');
+ 	index++;
+     
+     if(index>=img.length)
+     {
+     	index=0;
+     }
+
+     setTimeout("slider()",1500)
+
+  }
+
+  slider();
+
+
+ </script>
+
+
+</body>
+</html>

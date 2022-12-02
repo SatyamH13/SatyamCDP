@@ -9,21 +9,22 @@
 
 	<script type="text/javascript">
 		
+		num = 1;
 		
-		for(row=1;row<=5;row++)
+		for(row=0;row<=4;row++)
 		{
-          for(space=0;space<=5-row;space++)
+          for(space=0;space<=4-row;space++)
 
           { 
-          document.write("  ");	
+          document.write(" ");	
 
           }
              
-          for(col=1;col<=row;col++)
+          for(col=0;col<=row;col++)
           {
-           document.write(" *");
+           document.write(num++);
            
-       }
+          }
              document.write("<br>");
 
 		}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+
+		array = [12,13,14]
+
+		document.write(array+"<br>")
+
+		document.write(array.length+"<br>")
+
+		for(a=0;a<array.length;a++)
+		{
+			document.write(array[a]+"<br>")
+		}
+        document.write("<br>")
+		for(xyz in array)
+		{
+			// document.write(xyz+"<br>")index
+             document.write(array[xyz]+"<br>")
+         }
+
+         for(op of array)
+         {
+         	document.write(op)
+         }
+
+         document.write("<br>")
+
+         array.forEach(test)
+
+          function test(v)
+          {
+          	res = v
+          	document.write(res)
+          }
+          test(v)
+
+
+
+
+
+	</script>
+
+</body>
+</html>
