@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+
+		*{box-sizing: border-box;margin: 0;padding: 0;}
+		.nav{
+			height: 100px;
+			width: 100%;
+			background: gray;
+			
+			padding-top: 20px;
+			position: relative;
+
+		}
+
+		
+		.nav a{
+			font-size: 20px;
+			text-decoration: none;
+			margin: 0 20px;
+
+		}
+		.bar{
+			background: green;
+			font-size: 30px;
+			margin-left: 20px;
+			position: absolute;
+			top: 80%;
+			padding: 3px 5px;
+			cursor: pointer;
+			display: none;
+		}
+
+        
+		@media(max-width:600px)
+		{
+           .bar{display: block;}
+          ul{display: none;}
+         .hide{
+			display:block;
+		}
+
+          
+
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="nav">
+		<span class="bar" id="bar">
+			<i class="fa-solid fa-bars"></i>
+		</span>
+		<ul id="dropdown">
+			<a href="">home</a>
+			<a href="">about</a>
+			<a href="">home</a>
+			<a href="">home</a>
+		</ul>
+
+	</div>
+
+<script type="text/javascript">
+	
+	a = document.querySelector("#dropdown")
+	b =  document.querySelector("#bar")
+	console.log(a)
+	console.log(b)
+
+	b.addEventListener("click",check)
+
+	function check()
+	{
+
+		a.classList.toggle('hide')
+	}
+
+</script>
+
+</body>
+</html>
