@@ -1,0 +1,300 @@
+
+@media(min-width:200px)
+{
+	.content1 .c1{width: 100%;}
+	.content1 .popup_box{left: 3%}
+	.content1 .popup_box{height: 350px;width: 95%;}
+	.content1 .popup_box .box2 .box2-1 .text{margin-top: 10px}
+	.main2{margin-top: 15px}
+	.main{margin: 0}
+	.content1 .popup_box .box2 .box2-1 .sub_btn{margin-top: 20px}
+	.content1 .popup_box .box2 .box2-1 p{margin-top: 10px}
+	.content1 .popup_box2 .box2 .box2-1 .ptag{margin-top: 5px;}
+	.content1 .popup_box2{height: 420px;}
+	.content2 .c1{width: 100%;}
+	.content2 .search{justify-content:center;}
+    .content2 .search input{width: 85%;}
+    .content2 .logo{text-align: left;padding-left:10px;font-size:40px;}
+    .content2 .icon .btn{width: 60%;}
+    .content2 .icon .text{width: 40%;}
+    .content3 .nav .menu{display: none;}
+    .content3 .nav .bar{display: block;}
+    .content3 .btn{width: 50%;justify-content: right;padding-right: 10px;}
+    .content3 .nav{width: 50%;justify-content: left;padding-left:20px;position: relative;}
+    .content3 .nav .menu.hide{display:block;left: 0; animation: animate 1s;}
+    .content3 .nav .menu{position: absolute;top: 100%;left:-150%;width:200px;background: black;padding: 10px 0;z-index: 2}
+
+    @keyframes animate{from{left: -150%}to{left: 0}}	
+   
+   .content3 .nav .menu .a{width: 70px}
+   .content3 .nav .menu .b{width: 75px}
+   .content3 .nav .menu .c{width: 135px}
+   .content3 .nav .menu .d{width: 165px}
+   .content3 .nav .menu .e{width: 150px}
+   .content3 .nav .menu .f{width: 90px}
+
+    .content3 .nav .menu .option{display: block;margin-top: 15px;padding: 10px;}
+    .content3 .nav .menu .option .dropdown.show{display: block;}
+    .content3 .nav .menu .option .men.show1{display: block;}
+    .content3 .nav .menu .option .women.show2{display: block;}
+
+    .content3 .nav .menu .option .dropdown{position: unset;text-align: left;} 
+    .content3 .nav .menu .option .dropdown .d1{background:black;border: none;padding: 0;margin-top:5px }
+    .content3 .nav .menu .option .dropdown .d1 a{color:gray;padding: 0;}
+    .content3 .nav .menu .option .dp2{position: unset;padding: 20px 0;background: transparent;}
+    .content3 .nav .menu .option .dp2 .box{width: 160px;}
+    .content3 .nav .menu .option .dp2 .box .b1{width: 100%;}
+    .content3 .nav .menu .option .dp2 .box .b1 .bb1{width: 100%;}
+    .content3 .nav .menu .option .dp2 .box .b1 .bb1 .p{margin-bottom: 5px;}
+    .content3 .nav .menu .option .dp2 .box .b1 .bb1 .p a{color: gray;}
+    .content3 .nav .menu .option .dp2 .box .bb1-1{padding-left:0px;}
+
+    .content4 .swiper .swiper-wrapper .text h3{font-size: 13px;letter-spacing: 2px;}
+    .content4 .swiper .swiper-wrapper .text p{font-size: 10px; letter-spacing: 1px;margin-top: 5px}
+    .content4 .swiper .swiper-wrapper .text button{margin-top: 5px;padding:1px 5px;}
+    .content4 .swiper .swiper-wrapper .text button a{font-size:10px;}
+    .content5 .box .c1{height:230px;width: 100%}
+    .content5 .box .c1 .fall h3{ margin-top: 50px;font-size: 18px;letter-spacing: 2px;padding-right: 20px}
+    .content5 .box .c1 .fall p{font-size: 10px;margin-top: 15px; letter-spacing: 6px;padding-right: 20px}
+    .content5 .box .c1 .fall{ background-size: 700px 120%;}
+    .content6 .p1{width: 100%}
+    .content6 .p1-1{justify-content: center;}
+    .content6 .p1-1 .info .detail .i{flex-wrap: wrap;width: 100%}
+    .content6 .p1-1 .info .detail h2{text-align: center; font-size: 18px}
+    .content6 .p1-1 .info .detail p{text-align: center;}
+    .content6 .p1-1{padding-bottom: 25px}
+    .content7 .c7 .p1{width:100%;}
+    .content7 .c7 .p1 .img1{height: 400px}
+    .content7 .c7 .p2{width: 100%; margin-top: 20px; height: 300px;}
+    .content7 .c7 .p2 .shoes{justify-content: center}
+    .content7 .c7 .p2 .shoes .img2{width: 95%;}
+    .content7 .c7 .efect h2{margin-top: 20px;padding-right: 30px;}
+    .content7 .c7 .efect p{margin-top: 10px;padding-right: 30px; letter-spacing: 5px; display: block;}
+    .heading h1{font-size: 23px}
+    .content5 .box .c1 .offer p{font-size: 25px;letter-spacing: 3px;}
+    .product .box .option{width: 50%;}
+    .content10 h1{font-size: 30px;}
+    .content10{height: 320px;}
+    .content11 .box .p1{width: 100%;}
+   .content11 .box .p1 .icon{width: 100%;}
+  .content11 .box .p1 .detail{width: 100%;text-align: center;margin-top: 20px}
+   .footer .f_in .one .a{width: 100%;}
+  .footer .f_in .one .b{width: 100%;}
+  .footer .f_in .one .c{width: 100%;}
+  .footer .f_in .one .d{width: 100%;}
+  .footer .f_in .two .a{width: 100%;justify-content: center;}
+   .footer .f_in .two .text{font-size: 14px;}
+
+
+
+   
+}
+    
+  
+
+@media(min-width:300px)
+{
+    .content2 .icon .btn{width: 55%;}
+     .content2 .icon .text{width: 45%;}
+     .content2 .logo{font-size:45px;}
+     .content4 .swiper .swiper-wrapper .text h3{font-size: 15px;letter-spacing: 5px;}
+    .content4 .swiper .swiper-wrapper .text p{font-size: 13px; letter-spacing: 2px;margin-top: 6px}
+    .content4 .swiper .swiper-wrapper .text button{margin-top: 10px;padding:5px 10px;}
+    .content4 .swiper .swiper-wrapper .text button a{font-size:13px;}
+     .content5 .box .c1 .fall h3{font-size: 20px;letter-spacing: 3px;padding-right: 30px}
+    .content5 .box .c1 .fall p{font-size: 12px;letter-spacing: 9px;padding-right: 30px}
+    .heading h1{font-size: 29px}
+    .footer .f_in .two .text{font-size: 17px;}
+    
+}
+@media(min-width:400px)
+{
+  .content2 .logo{padding-left:30px;}
+  .content2 .icon .btn{width: 45%;}
+	 .content2 .icon .text{width: 55%;}
+	 .content4 .swiper .swiper-wrapper .text h3{font-size: 18px;letter-spacing: 7px;}
+    .content4 .swiper .swiper-wrapper .text p{font-size: 14px; letter-spacing: 3px;margin-top: 7px}
+    .content4 .swiper .swiper-wrapper .text button{margin-top: 12px;}
+
+
+
+}
+
+
+@media(min-width:500px)
+{
+	
+	.content2 .icon .btn{width: 40%;}
+	 .content2 .icon .text{width: 60%;}
+	 .content4 .swiper .swiper-wrapper .text h3{font-size: 23px;letter-spacing:8px;}
+    .content4 .swiper .swiper-wrapper .text p{font-size: 15px;letter-spacing:5px;margin-top: 10px}
+    .content4 .swiper .swiper-wrapper .text button{margin-top: 15px;}
+    .content5 .box .c1{height:300px;}
+    .content5 .box .c1 .fall h3{ margin-top: 90px;font-size: 30px;letter-spacing: 4px; padding-right: 50px;}
+    .content5 .box .c1 .fall p{font-size: 20px;margin-top: 20px; letter-spacing: 12px; padding-right: 45px;}
+    .content5 .box .c1 .fall{ background-size: 700px 110%;}
+    .content6 .p1-1 .info .detail h2{font-size:24px;}
+    .content7 .c7 .p2{height: 620px;}
+    .content7 .c7 .p1 .img1{height: 620px}
+    .content7 .c7 .efect h2{margin-top: 100px;padding-right: 70px;}
+    .content7 .c7 .efect p{margin-top: 20px;padding-right: 64px; letter-spacing: 10px}
+    .heading h1{font-size: 40px}
+    .content5 .box .c1 .offer p{font-size: 30px}
+    .product .box .option{width: 25%;}
+    .footer .f_in .two .text{font-size: 27px;}
+
+
+
+}
+@media(min-width:600px)
+{
+	.content1 .popup_box{left: 15%}
+	.content1 .popup_box{height: 400px;width: 450px;}
+	.content1 .popup_box .box2 .box2-1 .text{margin-top: 10px}
+	.main2{margin-top: 15px}
+	.main{margin: 0}
+	
+	.content1 .popup_box .box2 .box2-1 p{margin-top: 25px}
+	 .content4 .swiper .swiper-wrapper .text h3{font-size: 30px;letter-spacing: 10px;}
+    .content4 .swiper .swiper-wrapper .text p{font-size: 17px; letter-spacing: 7px;margin-top: 14px}
+    .content4 .swiper .swiper-wrapper .text button{margin-top: 18px;padding:8px 15px;}
+    .content4 .swiper .swiper-wrapper .text button a{font-size:15px;}
+
+   
+  .content11 .box .p1{width: 50%;}
+   .content11 .box .p1 .icon{width: 20%;}
+  .content11 .box .p1 .detail{width: 80%;text-align: left;margin-top: 0px}
+   .footer .f_in .one .a{width: 100%;}
+  .footer .f_in .one .b{width: 50%;}
+  .footer .f_in .one .c{width: 50%;}
+  .footer .f_in .one .d{width: 100%;}
+
+
+	
+	
+	
+}
+@media(min-width:700px)
+{   
+	
+	.content1 .blank{display: none;}
+	.content1 .c1{width:50%; }
+	.content1 .popup_box{left: 15%}
+	.content1 .popup_box{height: 500px;width: 550px;}
+	.content1 .popup_box .box2 .box2-1 .text{margin-top: 20px}
+	.main2{margin-top: 30px}
+	.main{margin: 0}
+	.content1 .popup_box2{height: 500px;}
+	.content1 .popup_box2 .box2 .box2-1 .ptag{margin-top: 15px;}
+	.content1 .popup_box .box2 .box2-1 .sub_btn{margin-top: 30px}
+	.content2 .logo{width: 50%;text-align: center;padding-left:0px;font-size: 55px;}
+	.content2 .icon{width: 50%}
+	.content2 .icon .text{width: 40%;}
+	.content2 .icon .btn{width: 60%;}
+	.content3 .btn{padding-right: 30px}
+	.content4 .swiper .swiper-wrapper .text h3{font-size: 35px;letter-spacing: 12px;}
+  .content4 .swiper .swiper-wrapper .text p{font-size: 18px; letter-spacing: 9px;margin-top: 15px}
+  .content4 .swiper .swiper-wrapper .text button{margin-top: 20px;padding:10px 20px;}
+  .content10 h1{font-size: 40px;}
+  .content10{height: 380px;}
+  
+	
+}
+	
+@media(min-width:800px)
+{
+	.content1 .popup_box{left: 23%}
+	.content5 .box .c1{width: 50%}
+  .content5 .box .c1 .fall p{letter-spacing:8px;}
+  .content5 .box .c1 .fall h3{font-size: 25px}
+  .content7 .c7 .p1{width:42%;}
+  .content7 .c7 .p2{width: 58%;margin-top:0px; height:auto;}
+  .content7 .c7 .p2 .shoes{justify-content: right;}
+  .content7 .c7 .p2 .shoes .img2{width: 97%;}
+  .content5 .box .c1 .offer p{font-size: 25px}
+
+}	
+
+@media(min-width:900px)
+{   
+	.content1 .blank{display:block;}
+	.content1 .blank{width: 10%;}
+	.content1 .c1{width: 20%;}
+	.content1 .popup_box{left: 27.5%}  
+	.content3 .nav .menu .option{margin: 0 6px} 
+	.content3 .nav .menu{display: block;}
+  .content3 .nav .bar{display: none;}
+  .content3 .btn{width: 25%;justify-content: left;padding-right: 0px}
+  .content3 .nav{width: 75%;justify-content: center;padding-left:0px;}
+  .content3 .nav .menu{background: transparent;position: unset;width: auto;	padding: auto;width: auto;padding: 0;}
+  .content3 .nav .menu .option{display: inline;  padding: 24px 0px;margin-top: 0;}
+  .content3 .nav .menu .option .dropdown{position: absolute;}
+  .content3 .nav .menu .option .dropdown .d1{background:white;padding: 10px 15px;margin-top: 0}
+  .content3 .nav .menu .option .dropdown .d1-1{border-bottom: 1px solid lightgray;}
+  .content3 .nav .menu .option .dropdown .d1 a{color: black;}
+  .content3 .nav .menu .option .dp2 .box{width:500px}
+  .content3 .nav .menu .option .dp2 .box .b1 .bb1 .p{margin-bottom: 15px}
+  .content3 .nav .menu .option .dp2{position: absolute;padding: 20px 30px;background: white;}
+  .content3 .nav .menu .option .dp2 .box .b1{width: 50%;}
+  .content3 .nav .menu .option .dp2 .box .b1 .bb1{width: 50%;}
+  .content3 .nav .menu .option .dp2 .box .b1 .bb1 .p{margin-bottom: 20px;}
+  .content3 .nav .menu .option .dp2 .box .b1 .bb1 .p a{color:black;}
+  .content3 .nav .menu .option .dp2 .box .bb1-1{padding-left:30px;}
+  .content4 .swiper .swiper-wrapper .text h3{font-size: 40px;letter-spacing: 13px;}
+  .content4 .swiper .swiper-wrapper .text p{font-size: 19px; letter-spacing: 10px;}
+  .content4 .swiper .swiper-wrapper .text button{margin-top: 25px;padding:10px 23px;}
+  .content6 .p1{width: 50%}
+  .content6 .p1-1{justify-content: left;}
+  .content6 .p1-1 .info .detail .i .icon{width: 150px}
+  .content6 .p1-1 .info .detail .i{flex-wrap:nowrap;}
+  .content6 .p1-1 .info .detail h2{text-align:left;}
+  .content6 .p1-1 .info .detail p{text-align: left;}
+  .content6 .p1-1{padding-bottom: 0px}
+  .content10 h1{font-size: 50px;}
+  .footer .f_in .two .a{width: 50%;justify-content:left}
+
+}
+@media(min-width:1000px)
+{
+  .footer .f_in .one .a{width: 22%;}
+  .footer .f_in .one .b{width: 22%;}
+  .footer .f_in .one .c{width: 30%;}
+  .footer .f_in .one .d{width: 26%;}
+
+}
+@media(min-width:1100px)
+{
+  .content3 .nav .menu .option{margin: 0 20px}
+  .content3 .nav .menu .option .dp2 .box{width:650px}
+  .content3 .nav .menu .option .dp2 .box .b1 .bb1 .p{margin-bottom: 20px}
+  .content4 .swiper .swiper-wrapper .text h3{font-size: 50px;letter-spacing: 15px;}
+  .content4 .swiper .swiper-wrapper .text p{font-size: 20px; letter-spacing: 12px;margin-top: 17px}
+  .content4 .swiper .swiper-wrapper .text button{margin-top: 30px;padding:10px 25px;}
+  .content5 .box .c1{height:340px}
+  .content5 .box{width: 85%}
+  .content5 .box .c1 .fall p{letter-spacing: 12px;}
+  .content5 .box .c1 .fall h3{font-size: 30px;}
+  .content5 .box .c1 .offer p{font-size: 30px}
+  .content9 .box .owl-carousel .item .main .three button{padding: 7px 35px;}
+  .content11 .box .p1{width: 25%}
+  .content11 .box .p1 .icon{width: 30%;}
+  .content11 .box .p1 .detail{width: 70%;}
+
+
+}
+ 
+
+@media(min-width:1200px)
+{
+	.content2 .c1{width: 33.33%;}
+	.content2 .search  input{ width: 325px;}
+	.content2 .search{justify-content: right;}
+  .content9 .box .owl-carousel .item .main .three button{padding: 7px 45px;}
+  
+
+  
+
+
+	
+	
+}

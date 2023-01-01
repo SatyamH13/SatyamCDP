@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat&display=swap');
+*{box-sizing: border-box;margin: 0;padding: 0;text-decoration: none;}
+
+p{
+  font-family: Montserrat;
+	color: #ffffff;	
+}
+h1{
+  font-family:Grand Hotel;
+  color: #ffc200;
+}
+
+.header{
+	width: 100%;
+	height: 796px;
+	background: #333333;
+	position: relative;
+	z-index: 10;
+
+	
+}
+.header .img1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -2;
+
+}
+.header .img2{
+	position: absolute;
+	bottom: -7px;
+	left: 434px;
+	z-index: -2;
+}
+.header .nav {
+	z-index:10;
+	padding-top: 36px;
+	display: flex;
+	width: 100%;
+
+}
+.header .nav .part1{
+
+	width: 18%;
+	padding-left: 56px;
+}
+.header .nav .part2{
+	
+	width: 82%;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+.header .nav .part2 .fa-bars{
+	display:none;
+	color: white;
+	font-size: 25px;
+	border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 8px;
+    margin-right: 30px;
+
+}
+
+
+.header .nav .part2 .menu{
+	list-style: none;
+	display: inline;
+
+
+
+}
+.header .nav .part2 .menu a{
+	font-size: 25px;
+	color: #ffffff;
+	margin-right: 50px;
+	font-family:Montserrat;
+
+}
+
+   
+.header .text{
+ padding-top: 135px;
+margin-left: 652px;
+
+}
+	
+
+
+.header p{
+	
+	font-size: 30px;
+	font-weight: 400;
+     
+}
+.header h1{
+	font-size: 125px;
+	font-weight: 400;
+	
+}
+

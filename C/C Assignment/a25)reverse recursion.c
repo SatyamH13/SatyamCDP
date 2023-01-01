@@ -12,7 +12,8 @@ void reversesentence()
 	if(c != '\n')
 	{
 	
-//	reversesentence();
+	reversesentence();
+     }
 	printf("%c",c);
-}
+     
 }
