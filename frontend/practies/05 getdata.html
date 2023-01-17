@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<input type="text" id="one" name="">
+<input type="text" id="two" name="">
+<button onclick="mydata()">Click me</button>
+
+<span id="show"></span>
+
+<script type="text/javascript">
+	// document.getElementById('')
+	// document.getElementsByClassName("")
+	// document.querySelector("")
+	// document.querySelectorAll("")
+	// document.getElementsByTagName("")
+	
+	function mydata()
+	{
+		let a =document.getElementById('one').value;
+		let b =document.getElementById('two').value;
+		let d=document.getElementById('show');
+
+		let c = parseInt(a)+parseInt(b);
+
+		d.innerHTML = c;
+
+
+
+	}
+
+
+</script>
+</body>
+</html>

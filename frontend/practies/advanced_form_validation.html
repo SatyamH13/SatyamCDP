@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<form >
+		<table >
+			<tr>
+				<td>Name : </td>
+				<td>
+					<input type="text" name="" id="name" onblur="chk(this,'nerr')" onkeyup ="alpha(this,'nmerr')">
+					<span id="nerr"></span>
+					<span id="nmerr"></span>
+				</td>
+							</tr>
+			<tr>
+				<td>Email : </td>
+				<td>
+					<input type="Email" name="" id="email"  onblur="chk(this,'eerr')" onkeyup="emailchk(this,'emerr')">
+					<span id="eerr"></span>
+					<span id="emerr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>password : </td>
+				<td>
+					<input type="password" name="" id="password"  onblur="chk(this,'perr')"  onkeyup="pwd(this,'paerr')">
+					<span id="perr"></span>
+					<span id="paerr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Confirm Password : </td>
+				<td>
+					<input type="password" name="" id="cp" onkeyup ="cpmatch(this,'cperror')">
+					<span id="cperror"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Mobile : </td>
+				<td>
+					<input type="text" name="" id="mob"  onblur="chk(this,'merr')" onkeyup ="mochk(this,'moerr')">
+					<span id="merr"></span>
+					<span id="moerr"></span>
+				</td>
+			</tr>
+			
+		</table>
+	</form>
+
+   <script type="text/javascript">
+   	
+   	function chk(e,spanid)
+   	{
+      
+      if(e.value == "")
+      {
+      	document.getElementById(spanid).innerText = "Required";
+      	document.getElementById(spanid).style.color = "red";
+      	return false;
+      	
+      }
+      else
+      {
+        document.getElementById(spanid).innerText = "";
+       	
+      }
+
+   }
+
+   function alpha(e,spanid){
+    var	name = /^[a-zA-z]+$/;
+     
+     if(name.test(e.value))
+     {
+     	  
+            document.getElementById(spanid).innerHTML =""; 
+     }
+     else
+     {
+          
+           document.getElementById(spanid).innerHTML ="you can enter charector only!"; 
+           	document.getElementById(spanid).style.color = "red";
+     }
+   
+  }
+
+   function emailchk(e,spanid){
+
+    var	email = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9])+\.([a-zA-Z]{2,3})+$/;
+     
+     if(email.test(e.value))
+     {
+     	  
+            document.getElementById(spanid).innerHTML =""; 
+     }
+     else
+     {
+          
+           document.getElementById(spanid).innerHTML ="Please enter valid email id!"; 
+           	document.getElementById(spanid).style.color = "red";
+     }
+   
+  }
+
+  function pwd(e,spanid){
+
+    var	pass = /^[a-zA-Z0-9@._-]{6,8}$/;
+     
+     if(pass.test(e.value))
+     {
+     	  
+            document.getElementById(spanid).innerHTML =""; 
+     }
+     else
+     {
+          
+           document.getElementById(spanid).innerHTML ="you can insert 6 to 8 character only!"; 
+           	document.getElementById(spanid).style.color = "red";
+     }
+   
+  }
+
+  function cpmatch(e,spanid){
+  
+  pwd = document.getElementById("password");
+  	if(pwd.value == e.value)
+  	{
+           document.getElementById(spanid).innerHTML = "";
+  	}
+  	else
+  	{
+         document.getElementById(spanid).innerHTML = "Password doesn't match";
+         document.getElementById(spanid).style.color = "red";
+  	}
+
+  }
+
+     function mochk(e,spanid){
+
+    var	mo = /^[0-9]{10}$/;
+     
+     if(mo.test(e.value))
+     {
+     	  
+            document.getElementById(spanid).innerHTML =""; 
+     }
+     else
+     {
+          
+           document.getElementById(spanid).innerHTML ="you can insert 10 digits only!"; 
+           	document.getElementById(spanid).style.color = "red";
+     }
+   
+  }
+
+
+
+
+   </script>
+
+
+</body>
+</html>

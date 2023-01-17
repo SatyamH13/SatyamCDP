@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	function person(fname,lname)
+	{
+		this.fname = fname;
+		this.lname = lname;
+	}
+	const data = new person("tops","teach");
+	// console.log(data);
+	// console.log(data.fname+" "+data.lname);
+
+
+	person.prototype.MyData = function(){
+		console.log(this.fname+" "+this.lname);
+	}
+	const newdata = person.prototype.MyData();
+
+	function student(fname,lname,school,grade)
+	{
+		person.call(this,fname,lname);
+		this.school = school;
+		this.grade = grade;
+	}
+
+	var std = new student("hello","world","tops","c")
+	console.log(std);
+	console.log(std.fname+" "+std.lname+" "+std.school+" "+std.grade)
+</script>
+</body>
+</html>

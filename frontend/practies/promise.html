@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		const mypro = new Promise((ha,na)=>{
+			var a = 5;
+			var b = 5;
+			if(a == b)
+			{
+				ha("both are equal");
+			}
+			else
+			{
+				na("no match found")
+
+			}	
+
+		}).then((res)=>{
+			console.log(res);
+		}).catch((error)=>{
+			console.log(error)
+		})
+	</script>
+
+</body>
+</html>

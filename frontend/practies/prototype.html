@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	function person(fname,lname)
+	{
+		this.fname = "tops";
+		this.lname = "teach";
+	}
+	const data = new person("tops","teach");
+	console.log(data);
+	console.log(data.fname+" "+data.lname);
+
+	person.prototype.MyData = function(){
+		console.log(this.fname+" "+this.lname);
+	}
+	const newdata = person.prototype.MyData();
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<table border="1">
+	
+	
+		<thead>
+			<th>User Id</th>
+			<th>Id</th>
+			<th>title</th>
+			<th>Completed</th>
+		</thead>
+	<tbody id="data"></tbody>
+
+</table>
+
+
+<script type="text/javascript">
+	
+	fetch('https://jsonplaceholder.typicode.com/todos').then((res)=>res.json()).then((aa)=>{
+      console.log(aa);
+      
+      htmldata = "";
+
+      aa.forEach(ss => {
+      	htmldata+= `<tr>
+            
+            <td>${ss.userId}</td>
+            <td>${ss.id}</td>
+            <td>${ss.title}</td>
+            <td>${ss.completed}</td>
+
+      	</tr>`
+      });
+
+      document.querySelector("#data").innerHTML = htmldata;
+
+	});
+
+</script>  
+
+</body>
+</html>

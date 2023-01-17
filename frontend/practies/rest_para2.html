@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	function demo(...input)
+	{
+		let sum=0;
+
+		for(x of input)
+		{
+			sum += x;
+		}
+		return sum;
+	}
+
+	console.log(demo(1,2,3));
+	console.log(demo(1,2,3,4,5,6));
+
+</script>
+</body>
+</html>

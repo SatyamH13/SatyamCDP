@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<table border="1" align="center">
+			<tr>
+				<td>Name:</td>
+				<td> <input type="text" name="name" id="name" onblur="validdata(this,'nameError')" onkeydown="alpha(this,'nError')">
+					<span id="nameError"></span>
+					<span id="nError"></span>
+				 </td>
+
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td> <input type="Email" name="email" id="email"  onblur="validdata(this,'EmailError')" onkeydown="email(this,'eError')">
+				<span id="EmailError"></span>
+				<span id="eError"></span>
+				 </td>
+			</tr>
+			<tr>
+				<td>pwd:</td>
+				<td> <input type="password" name="name" id="pwd" onblur="validdata(this,'pwdError')" onkeydown="password(this,'pError')"> 
+					<span id="pwdError"></span>
+					<span id="pError"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>mobile:</td>
+				<td> <input type="text" name="mobile" id="mobile" onblur="validdata(this,'mobileError')" onkeyup ="mobilechk(this,'mError')">
+					<span id="mobileError"></span>
+					<span id="mError"></span>
+				 </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" name="submit" value="submit">
+				</td>
+			</tr>
+		</table>
+
+		<script type="text/javascript">
+			function validdata(e,spanid)
+			{
+				if(e.value == "")
+				{
+					document.getElementById(spanid).style.color = "red";
+					document.getElementById(spanid).innerText = "Please Enter Data";
+				}
+				else{
+					document.getElementById(spanid).innerText="";
+				}
+			}
+
+			function alpha(e,spanid)
+			{
+				var alpha = /^[a-zA-Z]+$/;
+
+				if(alpha.test(e.value))
+				{
+					document.getElementById(spanid).innerText = "";
+				}
+				else
+				{
+				   document.getElementById(spanid).style.color="red"
+				   document.getElementById(spanid).innerText = "Please Enter only Character";	
+				}
+			}
+
+			function email(e,spanid)
+			{
+				var emailchk = /^([a-z0-9._-])+@([a-z0-9._-])+\.([a-zA-Z]{2,3})+$/;
+
+				if(emailchk.test(e.value))
+				{
+					document.getElementById(spanid).innerText = "";
+				}
+				else
+				{
+				   document.getElementById(spanid).style.color="red"
+				   document.getElementById(spanid).innerText = "Please Enter Valid Email Id";	
+				}
+			}
+			function password(e,spanid)
+			{
+				var pwdchk = /^[a-zA-Z0-9-_.]{6,8}$/;
+
+				if(pwdchk.test(e.value))
+				{
+					document.getElementById(spanid).innerText = "";
+				}
+				else
+				{
+				   document.getElementById(spanid).style.color="red"
+				   document.getElementById(spanid).innerText = "Please Enter valid password ";	
+				}
+			}
+			function mobilechk(e,spanid)
+			{
+				var m = /^[0-9]{10}$/;
+
+				if(m.test(e.value))
+				{
+					document.getElementById(spanid).innerText = "";
+				}
+				else
+				{
+				   document.getElementById(spanid).style.color="red"
+				   document.getElementById(spanid).innerText = "Please Enter valid Mobile no ";	
+				}
+			}
+		</script>
+
+</body>
+</html>

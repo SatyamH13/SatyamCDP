@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		ul li{
+			display: inline;
+			border: 2px solid;
+		}
+	</style>
+</head>
+<body>
+
+<ul>
+	<li>User Id</li>
+	<li>Id</li>
+	<li>Title</li>
+	<li>Body</li>
+  <ul id="data"></ul>
+</ul>
+
+
+<script type="text/javascript">
+	
+	fetch("https://jsonplaceholder.typicode.com/posts").then((res)=>res.json()).then((ss)=>{
+		console.log(ss);
+
+		htmldata = "";
+
+		ss.forEach(ff =>{
+			htmldata +=`<ul>
+			<li>${ff.userId}</li>
+			<li>${ff.id}</li>
+			<li>${ff.title}</li>
+			<li>${ff.body}</li>
+			</ul>`
+		});
+
+		document.querySelector('#data').innerHTML = htmldata;
+	});
+</script>
+
+</body>
+</html>

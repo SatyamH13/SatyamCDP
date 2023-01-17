@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<form onsubmit="return validdata()" method="post">
+		<table border="1" align="center">
+			<tr>
+				<td>Name:</td>
+				<td> <input type="text" name="name" id="name"> </td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td> <input type="Email" name="email" id="email"> </td>
+			</tr>
+			<tr>
+				<td>pwd:</td>
+				<td> <input type="password" name="name" id="pwd"> </td>
+			</tr>
+			<tr>
+				<td>mobile:</td>
+				<td> <input type="text" name="mobile" id="mobile"> </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" name="submit" value="submit">
+				</td>
+			</tr>
+		</table>
+	</form>
+
+<script type="text/javascript">
+	
+	function validdata()
+	{
+		let name = document.getElementById('name').value;
+		if(name == "")
+		{
+			alert("Please Enter Name!");
+			document.getElementById('name').focus();
+			return false;
+		}
+
+		let pwd = document.getElementById('pwd').value;
+		if(pwd == "")
+		{
+			alert("Please Enter Password!");
+			document.getElementById('pwd').focus();
+			return false;
+		}
+		let email = document.getElementById('email').value;
+		if(email == "")
+		{
+			alert("Please Enter Email!");
+			document.getElementById('email').focus();
+			return false;
+		}
+
+		let mobile = document.getElementById('mobile').value;
+		if(mobile == "")
+		{
+			alert("Please Enter Mobile num");
+			document.getElementById('mobile').focus();
+			return false;
+		}
+
+
+	}
+
+</script>
+</body>
+</html>

@@ -5,6 +5,16 @@
 	.header .img2{left: 280px;bottom: -7px;height: 110vh;width: 450px;}
 	.header .nav .part2 .menu a{margin-right: 30px;font-size: 23px}
 	.header .text{margin-left: 450px}
+	.header .text .f2{top: 216px;left: 500px;}
+	.header .text .f3{top: 450px;left: 500px;}
+	.header .text .f4{top: 250px;left: -60px;}
+	.header .text .f5{top: 380px;left: 280px;}
+	.header .text .f6{top: 20px;left: 150px;}
+	.header .text .f7{top: 70px;left: 350px;}
+	.content1 .c1 p{padding: 15px 100px}
+	.content1 .c2 .c2-1 .aa p{padding: 10px 50px}
+	
+	
 }
 
 
@@ -13,19 +23,43 @@
 	.header .img2{left: 240px;bottom: -0.5px;height: 110vh;width: 420px;}
 	.header .nav .part2 ul{display: none;}
 	.header .nav .part2 .fa-bars{display: block;}
-	.header .text{margin-left: 400px}
-	.header .text h1{font-size: 100px}
-	.header .text p{font-size: 25px}
+	.header .text{margin-left: 370px;}
+	.header .text h1{font-size: 80px}
+	.header .text p{font-size: 22px;}
+	.header .text .f1{top: 0px;left: 0px;}
+	.header .text .f2{top: 430px;left: 50px;}
+	.header .text .f3{top: 100px;left: -50px;}
+	.header .text .f4{top: 160px;left: 300px;}
+	.header .text .f8{top: 420px;left: 100px;}
+	.content1 .c1 p{padding: 15px 70px}
+	.content1 .c1 h2{font-size: 60px}
+	.content1 .c2 .c2-1 .aa{width: 100%}
+	.content1 .c2 .c2-1 .aa p{padding: 10px 200px}
 
 }
 
 @media(max-width:700px)
 {   
-	.header .img2{left: 170px;width: 320px;}
+	.header .img2{left: 155px;width: 320px;}
+	.header .text{margin-left: 270px;}
+	.header .text h1{font-size: 70px}
+	.header .text p{font-size: 20px;}
+	.header button{height: 40px;width: 200px}
+	.content1 .c1 p{padding: 15px 30px;font-size:22px;}
+	.content1 .c1{padding-top: 100px}
+	.content1 .c2 .c2-1 .aa p{padding: 10px 130px}
 }
 
 @media(max-width:500px)
 {
 	.header .img1{width: 100%;}
 	.header .img2{display: none;}
+	.header .text{margin: auto;text-align: center;}
+	.header .nav .part1{padding-left: 10px;}
+	.header .text .fruit{display: none;}
+	.content1 .c1 p{font-size:16px;}
+	.content1 .c1 h2{font-size: 50px}
+	.content1 .c1{padding-top: 70px}
+	.content1 .c2 .c2-1 .aa .img{height: 224px;width: 215px;}
+	.content1 .c2 .c2-1 .aa p{padding: 10px 40px}
 }

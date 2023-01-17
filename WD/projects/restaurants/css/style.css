@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat:wght@400;700&display=swap');
+
 *{box-sizing: border-box;margin: 0;padding: 0;text-decoration: none;}
 
 p{
@@ -16,6 +17,7 @@ h1{
 	background: #333333;
 	position: relative;
 	z-index: 10;
+	overflow:hidden;
 
 	
 }
@@ -80,8 +82,10 @@ h1{
 
    
 .header .text{
- padding-top: 135px;
-margin-left: 652px;
+padding-top: 100px;
+margin-left: 630px;
+position: relative;
+
 
 }
 	
@@ -91,6 +95,7 @@ margin-left: 652px;
 	
 	font-size: 30px;
 	font-weight: 400;
+	margin-bottom: 45px;
      
 }
 .header h1{
@@ -98,4 +103,119 @@ margin-left: 652px;
 	font-weight: 400;
 	
 }
+button{
+	background:#ffc200;
+	color: #333333;
+	border: none;
+	font-weight: 700;
+	font-size: 15px;
+	height: 49px;
+	width: 245px;
+	border-radius: 5px;
+	font-family: 'Montserrat';
+	cursor: pointer;
+}
 
+.header .text .fruit{
+	position: absolute;
+}
+.header .text .f1{
+	top: 40px;
+	left: -20px;
+}
+.header .text .f2{
+	top: 216px;
+	left: 617px;
+}
+.header .text .f3{
+	top: 596px;
+	left: 394px;
+}
+.header .text .f4{
+	top: 570px;
+	left: -20px;
+}
+.header .text .f5{
+	top: 544px;
+	left: 134px;
+}
+.header .text .f6{
+	top: 423px;
+	left: 623px;
+}
+.header .text .f7{
+	top: 645px;
+	left: 580px;
+}
+.header .text .f8{
+	top: 45px;
+	left: 478px;
+}
+
+.content1{
+	height: 796px;
+	width: 100%;
+	
+}
+.content1 .c1 {
+	text-align: center;
+	padding-top: 136px;
+}
+.content1 .c1 h2{
+	font-size: 75px;
+	font-family: 'Grand Hotel';
+	color: #333333;
+	font-weight: 400;
+
+}
+.content1 .c1 p{
+	font-size: 25px;
+	color: #333333;
+	font-family: 'Montserrat';
+	padding: 15px 250px;
+	text-align: center;
+	margin: auto;
+}
+.content1 .c2{
+	width: 100%;
+}
+.content1 .c2 .c2-1{
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: auto;
+	padding-top: 79px;
+
+}
+.content1 .c2 .c2-1 .aa img{
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+
+}
+.content1 .c2 .c2-1 .aa{
+	width: 33.33%;	
+	padding-bottom: 70px;
+}
+.content1 .c2 .c2-1 .aa .img{
+	width: 245px;
+	height: 254px;
+	border-radius: 50%;
+	margin: auto;
+
+}
+.content1 .c2 .c2-1 .aa h3{
+	font-size: 42px;
+	color: #333333;
+	font-weight: 400;
+	font-family: 'Grand Hotel';
+	text-align: center;
+	padding-top: 20px;
+}
+.content1 .c2 .c2-1 .aa p{
+	font-size: 17px;
+	color: #333333;
+	font-family: 'Montserrat';
+	padding: 10px 80px;
+	text-align: center;
+}
