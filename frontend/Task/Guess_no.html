@@ -278,32 +278,17 @@
       
 	
 	let guessno = document.querySelector('.guessno');
-
 	let no = Math.trunc(Math.random() * 100)+1;
-	console.log(no)
 	let guess = document.querySelector('.guess');
-    let count = 20;
-    let hs = document.querySelector('.highscore');
+  let count = 20;
+  let hs = document.querySelector('.highscore');
 
- document.querySelector('.chk').addEventListener("click",function(){
-	let input = document.querySelector('.num').value;
+  document.querySelector('.chk').addEventListener("click",function(){
+	     let input = document.querySelector('.num').value;
      
        if(!input)
        {
        	guess.innerHTML = "No number";
-       }
-       else if(no < input)
-       { 
-       		guess.innerHTML = "To High number";
-       		count--;
-       		let score = document.querySelector('.score').innerHTML = count;
-    
-       }
-       else if(no > input)
-       {
-       	guess.innerHTML = "To Low number";
-       	count--;
-       	let score = document.querySelector('.score').innerHTML = count;
        }
        else if(no == input)
        {
@@ -311,21 +296,27 @@
           document.querySelector(".a").style.display="block"
           document.querySelector(".b").style.display="block"
           document.querySelector(".c").style.display="block"
-      
-       	guessno.innerHTML = no;
-
-       	
-      
-       	document.querySelector('.main').style.background = "green";
+          guessno.innerHTML = no;
+          document.querySelector('.main').style.background = "green";
 
        	if( document.querySelector('.highscore').innerHTML < count)
        	{
        	  document.querySelector('.highscore').innerHTML = count
-       	 
- 
-        }
+       	}
+       }
+       else if(no !== input)
+       {
+       		guess.innerHTML = (no<input)? "To high number ":"To low number";
+       		count--;
+       		let score = document.querySelector('.score').innerHTML = count;
+       		if(count == 0)
+        	{
+       			guess.innerHTML = "You lose the game";
+        	}
+
        }
       
+       
         
            	 
 
@@ -356,20 +347,6 @@ document.querySelector('.chk').addEventListener("click",function(){
 	 guessno = document.querySelector('.guessno').innerHTML = no;  
 	}
 })
-
-
-
-
-
-
-           
-           	 
-
-     
-     
-
-    
-
 
 </script>
 </body>

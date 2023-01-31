@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{box-sizing: border-box;margin: 0;padding: 0;font-family: sans-serif;}
+		.main{
+			height: 100vh;
+			width: 100%;
+			background:linear-gradient(45deg,red,purple);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.main .box{
+			height: 70%;
+			width: 60%;
+			display: flex;
+            background:#A05E4F ;
+            border-radius: 5px;
+            position: relative;
+			
+		}
+
+		.main .box .player{
+			height: 100%;
+			width: 50%;
+			border-radius: 5px;
+			text-align: center;
+			padding-top: 70px;
+			position: relative;
+			
+		}
+		.activeplayer{
+			background: #E8AFA3  ;
+		}
+		.main .box button{
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%);
+			background: transparent;
+			border: none;
+			background: rgba(238, 224, 221, 0.7);
+			padding: 10px 15px;
+			border-radius: 30px;
+			font-weight: bold;
+
+		}
+		.main .box .new{
+			top: 5%;
+		}
+		.main .box .dice{
+			top: 70%;
+		}
+		.main .box .hold{
+			top: 80%;
+		}
+		.main .box .player h1{
+			font-weight: 400;
+		}
+		.main .box .player p{
+			font-size: 50px;
+			color: darkred;
+			margin-top: 20px;
+		}
+		.main .box .player .sbox{
+			height: 130px;
+			width: 200px;
+			border-radius: 5px;
+			background: darkred;
+			margin:100px auto;
+			text-align: center;
+			color: white;
+			padding-top: 30px;
+		}
+		.main .box .player .sbox span{
+			font-size: 30px;
+			display: block;
+			margin-top: 10px;
+		}
+		.main .box img{
+			position: absolute;
+			left: 50%;
+			top: 25%;
+			transform: translate(-50%);
+		}
+		.main .box .player .winner{
+			position: absolute;
+			top: 0;
+			left: 0;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			color: purple;
+			font-size: 40px;
+			text-shadow: 0 0 10px white;
+		
+
+		}
+
+		.hidden{
+			display: none;
+		}
+		.win{
+			background:black;
+			color: white;
+		}
+
+
+		
+	</style>
+</head>
+
+<body>
+ <div class="main">
+ 	<div class="box">
+ 		<div class="player player-0 activeplayer">
+ 			<h1>PLAYER 1</h1>
+ 			<p class="score-0">0</p>
+ 			<h2 class="winner win0 hidden">Winner</h2>
+ 			<div class="sbox">
+ 				<div>CURRENT</div>
+ 				<span class="currentscore-0">0</span>
+ 			</div>
+ 		</div>
+ 		<div class="player player-1">
+ 			<h1>PLAYER 2</h1>
+ 			<p class="score-1">0</p>
+ 			<h2 class="winner win1 hidden">Winner</h2>
+ 			<div class="sbox">
+ 				<div>CURRENT</div>
+ 				<span class="currentscore-1">0</span>
+ 			</div>
+ 		</div>
+        <img src="" class="img hidden" height="60px" width="60px">
+        <button class="new">NEW GAME</button>
+         <button class="dice">ROLL DICE</button>
+          <button class="hold">HOLD</button>
+
+ 	</div>
+ </div>
+
+
+ <script type="text/javascript">
+  let player0 = document.querySelector('.player-0');
+  let player1 = document.querySelector('.player-1');	
+  let dice = document.querySelector('.dice');
+  let img = document.querySelector('.img');
+  let currentscore0 = document.querySelector('.currentscore-0');
+  let currentscore1 = document.querySelector('.currentscore-1');
+  let score0 = document.querySelector('.score-0');
+  let score1 = document.querySelector('.score-1');
+  let hold = document.querySelector('.hold');
+  let newgame = document.querySelector('.new');
+
+      let  scores= [0,0]
+      score0.textContent = 0;
+      score1.textContent = 0; 
+      c_score = 0;
+     let activeplayer = 0;
+     let game = true;
+	 let k =true;
+
+     function chk()
+     {
+         document.querySelector(`.currentscore-${activeplayer}`).textContent = 0;
+     		c_score = 0
+     		player0.classList.toggle('activeplayer');
+     		player1.classList.toggle('activeplayer');
+     		activeplayer=(activeplayer == 0)?1:0;
+			k=true;
+
+     }
+     
+	 function asd(){
+		
+            document.querySelector(`.currentscore-${activeplayer}`).textContent = c_score;
+			k = false;
+	 }
+
+     dice.addEventListener("click",function(){
+       
+
+      if(game)
+      {
+
+     	let num = Math.trunc(Math.random()*6)+1;
+        img.src = "dise-"+num+".jpg";
+     	img.classList.remove('hidden');
+
+
+		
+	   if(scores[activeplayer] == 95 && ( num == 5 || num == 4 || num == 3 || num == 2) )
+		{
+			c_score += num;	
+          asd();
+		  
+		}
+		else if(scores[activeplayer] == 96 && (num == 4 || num == 3 || num == 2) )
+		{
+			c_score += num;
+			asd();
+			
+		}
+		else if(scores[activeplayer] == 97 && (num == 3||num == 2) )
+		{
+			c_score += num;
+			asd();
+			
+		}
+         else if(scores[activeplayer] == 98 && (num == 2) )
+		{
+			c_score += num;
+			asd();
+			
+           
+		}
+		else if(scores[activeplayer] == 99 && num == 1)
+		{
+			c_score += num;
+			asd();
+			
+
+		}
+
+     	else if(num !== 1)
+     	{
+			
+			if(k)
+			{
+     		 c_score += num;
+            document.querySelector(`.currentscore-${activeplayer}`).textContent = c_score;
+			}
+     	}
+     	else
+     	{
+     		chk();
+     	}
+     }
+       });
+
+        hold.addEventListener("click",function(){
+
+          if(game)
+          {
+             
+			
+
+          
+
+		//    if( scores[activeplayer]>=100)
+		//    {
+		// 	document.querySelector(`.score-${activeplayer}`).textContent =scores[activeplayer];
+		//    }
+		//    else{
+			if(((c_score + scores[activeplayer])<= 100))
+			{
+				scores[activeplayer] += c_score
+			document.querySelector(`.score-${activeplayer}`).textContent = scores[activeplayer];
+		   }
+           
+           if(scores[activeplayer] >= 100)
+           {
+              document.querySelector(`.player-${activeplayer}`).classList.toggle('win')
+              document.querySelector(`.win${activeplayer}`).classList.remove('hidden')
+              img.classList.add('hidden');
+              game = false;
+           }
+           else{
+           	chk();
+           }
+       }    
+         
+       });
+
+        newgame.addEventListener("click",function(){
+            scores= [0,0];
+           score0.textContent = 0;
+           score1.textContent = 0; 
+           currentscore0.textContent = 0;
+           currentscore1.textContent = 0; 
+            document.querySelector(`.win${activeplayer}`).classList.add('hidden')
+            document.querySelector(`.player-${activeplayer}`).classList.remove('win')
+            player0.classList.add('activeplayer');
+     		player1.classList.remove('activeplayer');
+     		 img.classList.add('hidden');
+           c_score = 0;
+           activeplayer = 0;
+          game = true;
+		  k=true;
+        	 
+        })
+
+
+
+ </script>
+
+</body>
+</html>

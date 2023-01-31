@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<table border="1">
+   <th colspan="2">Registration Form</th>
+    <tr>
+        <td>Name : </td>
+        <td><input type="text" id="uname"></td>
+    </tr>
+    <tr>
+        <td>Email : </td>
+        <td><input type="email" id="email"></td>
+    </tr>
+    <tr>
+        <td>Password : </td>
+        <td><input type="password" id="pwd"></td>
+    </tr>
+    <tr>
+        <td>Mobile : </td>
+        <td><input type="" id="mo"></td>
+    </tr>
+    <tr  >
+       <td colspan="2" align="center"> <input id="sub" onclick="chk()" type="submit" value="submit"></td>
+    </tr>
+
+</table>
+
+<script>
+ 
+function chk(){
+
+ let uname = document.getElementById('uname').value;
+ let email = document.getElementById('email').value;
+ let pwd = document.getElementById('pwd').value;
+ let mo = document.getElementById('mo').value;
+
+ let data = {username:uname,email:email,password:pwd,mobile:mo}
+ console.log(data)
+
+
+    fetch('http://localhost/api/registration_api',{method:'post',headers:{'Content-Type':'application/json'},body:JSON.stringify({allData:data})})
+    .then(res=>res.json()).then((show)=>{
+        console.log(show)
+    })
+    
+    
+           localStorage.setItem('userid',Response.data)
+    
+    
+}
+</script>
+</body>
+</html>
