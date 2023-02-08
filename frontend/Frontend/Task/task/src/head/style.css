@@ -1,0 +1,52 @@
+*{box-sizing: border-box;padding: 0;margin: 0;}
+.aa{
+    font-size: 20px;
+    font-family: cursive;
+}
+.photo{
+    height: 84.2vh;
+    width: 100%;
+    background:url(https://assets.cntraveller.in/photos/628335e0f41f0d088a211d64/master/pass/Koishii%20at%20The%20Penthouse,%20Level%2037,%20St.%20Regis,%20Mumbai.jpg);
+    background-size: cover;
+    
+     display: grid;
+     place-items: center;
+
+
+    
+    
+}
+.box{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background:rgba(0,0,0,0.5);
+    text-align: center;
+    padding-top: 20px;
+}
+.box h1{
+    color: white;
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+}
+
+
+.photo .box .btn{
+    margin: 0 20px;
+}
+.box ul{
+
+    padding-top: 20px;
+
+}
+.box ul li{
+    font-size: 25px;
+    color:aqua;
+    text-align:center   ;
+    list-style: none;
+    margin-top: 5px;
+
+    
+
+    
+}
