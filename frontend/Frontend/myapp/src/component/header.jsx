@@ -9,10 +9,15 @@ import Home from './home';
 import About from './about';
 import Compo from './compo';
 import State from './state';
-import Life from './lifecycle'
+import Life from './lifecycle';
+import Fetch from './fetchapi';
+import Fetch2 from './fetchapi2';
+import Usestate from './function compo/usestate';
+import Useeffct from './function compo/useeffect';
+import Useref  from './function compo/useref';
 function header(props) {
 
-  const menu = {'/home':'Home','/about':'About','/compo':'Compo','/state':'State','/lifecycle':'LifeCycle'};
+  const menu = {'/home':'Home','/about':'About','/compo':'Compo','/state':'State','/lifecycle':'LifeCycle','/fetchapi':'FetchAPI','/fetchapi2':'FetchAPI2','/usestate':'UseState','/useeffect':'UseEffect','/useref':'UseRef'};
   const data = Object.entries(menu).map((res,i)=>{
       return   <li className="nav-item" key={i}>
       <Link className="nav-link active" to={res[0]} >{res[1]}</Link>
@@ -43,6 +48,12 @@ function header(props) {
   <Route path='/compo'element={<Compo/>}/>
   <Route path='/state'element={<State/>}/>
   <Route path='/lifecycle'element={<Life/>}/>
+  <Route path='/fetchapi'element={<Fetch/>}/>
+  <Route path='/fetchapi2' element={<Fetch2/>}/>
+  <Route path='/usestate' element={<Usestate/>}/>
+  <Route path='/useeffect' element={<Useeffct/>}/>
+  <Route path='/useref' element={<Useref/>}/>
+  
 </Routes>
 </Router>
       </>

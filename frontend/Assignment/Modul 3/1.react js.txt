@@ -1,0 +1,32 @@
+1) What is React Js?
+=> The React.js framework is an open-source JavaScript framework and library developed by Facebook.
+
+2) What is NPM in React Js?
+=> node package manager.
+
+3) What is Role of Node Js in react Js?
+=> NodeJS is a framework of JavaScript which is mainly used for working with the backend of our application or building the backend using JavaScript
+
+4) What is CLI command In React Js?
+=> CLI makes it easy to create an app, page, module and component that follows the best practices and structure defined by you and your team
+
+5) What is Components in React Js?
+=> Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types, Class components and Function components, in this tutorial we will concentrate on Function components.
+
+6) What is Header and Content Components in React Js?
+=> Headers are compositions that extend standard navbar functionalities. They contain additional components like a jumbotron, sub-navbar, or image covers which serve as a containers for extra navigation elements - usually links, forms, or call-to-action buttons.
+
+7) How to install React Js on Windows, Linux Operating System? How toinstall NPM and How to check version of NPM?
+=>  Step 1: Install Node.js installer for windows.
+    Step 2: Open command prompt  to check whether it is completely installed or not type the command –> node -v  
+    Step 3: Now in the terminal run the below command: (npm install -g create-react-app)  
+    Step 4:Now Create a new folder where you want to make your react app using the below command: mkdir newfolder
+    Step 5: Now inside this folder run the command –> create-react-app reactfirst YOUR_APP_NAME
+    Step 6: Now open the IDE of your choice for eg.  Visual studio code and open the folder where you have installed the react app newfolder (in the above example)  inside the folder you will see your app’s name reactapp (In our example). Use the terminal and move inside your app name folder.Use command  cd reactapp (your app name)
+    Step 7: To start your app run the below command : npm start  
+
+8) How to check version of React Js?
+=> To check which React version is your project using you need to open the package. json. Take a look under the dependencies section. It should list all of the dependencies of your project and one of those should be React.
+
+9) How to change in components of React Js?
+=> To change a value in the state object, use the this.setState() method. When a value in the state object changes, the component will re-render, meaning that the output will change according to the new value(s).
