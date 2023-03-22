@@ -1,3 +1,17 @@
+@media(max-width:900px){
+    .program1 .video2{top: 43%;}
+
+}
+
+@media(max-width:768px){
+    .program1 .detail{padding: 0;}
+    .program1 .detail h1{text-align: center;padding: 0 20px; font-size: 40px;padding-top: 20px;}
+    .program1 .detail h4{text-align: center;padding: 0 20px; font-size: 20px;padding-bottom: 20px;}
+    .program1 .video2{top: 40%;}
+    .asked h1{font-size: 40px;}
+    
+
+}
 @media(max-width:700px)
 {
     .header-section .navigation .p1 img{height: 70px;width: 150px;}
@@ -5,6 +19,21 @@
     .header-section .navigation .menu{width: 70%; justify-content: flex-end;}
     .header-section .navigation .p1 select{width: 40px;}
     .header-section .navigation .p1 .signin{margin-left: 3px;}
+    .header-section .banner h1{ font-size: 30px;}
+    .header-section .banner h3{margin-top: 10px;font-size: 18px;}
+    .header-section .banner h4{ margin-top: 10px;font-size: 17px;}
+    .header-section .banner .start { margin-top: 15px;}
+    .start button{font-size: 16px;padding: 11px 3px;}
+    .start input{height: 50px;width: 40%;}
+    .program1 .tv{padding: 200px 0;}
     
     
+}
+@media(max-width:500px)
+{
+    .program1 .tv{padding: 150px 0;}
+    .program1 .mobile .thing{width: 90%; top:55%;}
+    .start .input .address{font-size: 13px;letter-spacing: 0;}
+    .bad{font-size: 18px!important;}
+    .sign .box{width: 90%;}
 }

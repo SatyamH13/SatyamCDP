@@ -5,6 +5,7 @@
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),url(/public/img/bg-header.jpg);
   background-size: cover;
 }
+
 .header-section .navigation{
   width: 100%;
   display: flex;
@@ -24,46 +25,53 @@
 .header-section .navigation .logo{
   padding-left: 120px;
 }
-.header-section .navigation .p1 select{
+.p1 select{
   width: 130px;
   background: transparent;
   color: white;
   padding-left: 35px;
 }
 
-.header-section .navigation .p1 span{
+.p1 span{
   position: relative;
   
 
   
 }
-.header-section .navigation .p1 span .fa-globe{
+.p1 span .fa-globe{
   color: white;
   position: absolute;
   top: 50%;
   left: 10px;
   transform: translate(0,-50%);
 }
-.header-section .navigation .p1 span .fa-caret-down{
+.p1 span .fa-caret-down{
   color: white;
   position: absolute;
   top: 50%;
   left: 70%;
   transform: translate(0,-50%);
 }
-.header-section .signin{
-  background: rgb(229, 9, 20);
-  color: white;
-  font-weight: bold;
-  margin-left: 20px;
+.signin{
+  background: rgb(229, 9, 20)!important;
+  color: white!important;
+  font-weight: bold!important;
+  margin-left: 20px!important;
+  border-radius: 5px!important;
+  border: none!important;
 }
-.header-section .navigation .menu{
+.menu{
   justify-content: center;
 }
 .header-section .banner{
   text-align: center;
   color: white;
+  height: 83.5%;
+  display: flex;
+  align-items: center;
+  
 }
+
 .header-section .banner h1{
   font-size: 53px;
   font-weight: bold;
@@ -75,11 +83,366 @@
   margin-top: 15px;
 }
 .header-section .banner .start {
+margin-top: 20px;
+}
+.start input{
+  width: 40%;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 16px;
+  padding-left: 10px;
+}
+.start button{
+
+font-size: 25px;
+padding: 11px 25px;
+font-weight: 400;
 
 }
-.header-section .banner .start input{
-  width: 30%;
+.start button .fa-arrow-right{
+  margin-left: 10px;
+}
+.start .input{
+  position: relative;
+  z-index: 0;
+}
+.start .input .address{
+  position: absolute;
+  top: -3px;
+  left: 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  z-index: -1;
+
+}
+.start .input input:focus ~ .address{
+  top: -70%;
+  font-size: 13px;
+}
+.b1{
+  height: 10px;
+  width: 100%;
+  background:#393838;
+
+}
+.program1{
+  width: 100%;
+  background: black;
+  color: white;
+}
+.program1 .detail{  
+  padding-left: 130px;
+  display: flex;
+  align-items: center;
+}
+.program1 .detail h1{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.program1 .tv{
+  position: relative;
+  padding: 250px 0;
+  z-index: 1;
+}
+
+
+.program1 .tv .img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+
+
+}
+
+.program1 .tv .vid{
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  width: 60%;
+  transform: translate(-50%,-50%);
+  z-index: -1;  
+  
+}
+.program1 .detail2{
+  padding-left: 0;
+  padding-right: 150px;
+}
+.program1 .mobile {
+  text-align: right;
+}
+.program1 .mobile .mobileimg{
+  height: 90%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0,-50%);
+
+}
+.program1 .mobile .thing{
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 100px;
+  width: 60%;
+  border: 2px solid #393838;
+  border-radius: 10px;
+  background: black;
+  display: flex;
+  place-items: center;
+  padding-left: 5px;
+  overflow: hidden;
+}
+.program1 .mobile .thing .text{
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 60%;
+  
+
+}
+.program1 .mobile .thing .text h4{
+  font-size:20px;
+  text-align: left;
+}
+.program1 .mobile .thing .text p{
+  margin-top: -10px;
+  text-align: left;
+  font-size: 15px;
+  color: #0071eb;
+}
+.program1 .video2{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  width: 50%;
+}
+.asked h1{
+  font-size: 50px;
+  padding: 40px 0;
+  font-weight: bold;
+  color: white;
+}
+.question{
+  background: black;
+  
+}
+.main{
+  width: 80%;
+  
+  margin: auto;
+  background: rgb(45, 45, 45)!important;
+  color: white;
+  font-size: 20px;
+}
+.bad{
+  background: rgb(45, 45, 45)!important;
+  color: white!important;
+  height: 80px;
+  margin-top: 10px;
+  font-size: 23px!important;
+  letter-spacing: 1px;
+
+}
+.bad:hover{
+  background:gray!important;
+
+}
+.accordion-button::after{
+  background: none!important;
+}
+.fa-plus{
+  color: white;
+  position: absolute;
+  right: 5%;
+  font-size: 30px!important;
+}
+.rotate{
+  transform: rotate(45deg);
+}
+.membership h4{
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 22px;
+}
+.last{
+  text-align: center;
+}
+.foot{
+  background: black;
+  color: white;
+}
+.foot p{padding-left: 28px;padding-top: 40px;}
+.foot p a{color: white;}
+.footdrop{
+  width: 130px;
+  margin-top: 30px;
+}
+.foot li{
+  list-style: none;
+  margin-top: 15px;
+}
+.foot li a{
+  color: white;
+  font-size: 14px;
+}
+.foot .lastli{
+  margin-top: 10px;
+}
+@keyframes ldio-rpinwye8j0b {
+  0% { transform: rotate(0deg) }
+  50% { transform: rotate(180deg) }
+  100% { transform: rotate(360deg) }
+}
+.ldio-rpinwye8j0b div {
+  position: absolute;
+  animation: ldio-rpinwye8j0b 1s linear infinite;
+  width: 160px;
+  height: 160px;
+  top: 20px;
+  left: 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 0 0 #e15b64;
+  transform-origin: 80px 82px;
+}
+.loading{
+ 
+
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  
+}
+.loadingio-eclipse {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+}
+.ldio-rpinwye8j0b {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-rpinwye8j0b div { box-sizing: content-box; }
+
+.c1{
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  z-index: 1000;
+  transition: 0.1s linear;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+}
+
+.c2{
+  height: 4rem;
+  width: 4rem;
+  position: absolute;
+  top:0;
+  left:0;
+  border-radius: 50%;
+  border: 1px solid white;
+  z-index: 1000;
+  pointer-events: none;
+  transition: 0.3s linear;
+  transform: translate(-50%,-50%);
   background: transparent;
+  
+}
+::-webkit-scrollbar{
+  width: 15px;
 }
 
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(31, 31, 31); 
+}
+body{
+  overflow-x: hidden!important;
+}
 
+.hide{
+  display: block;
+}
+.adcss{
+  background: white;
+  opacity: 0.5;
+  height:5rem;
+  width: 5rem;
+  transition: 0.5s;
+}
+.sign{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),url(/public/img/bg-header.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+.sign .box{
+  width: 400px;
+  background:rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 50px;
+
+}
+.sign .box h1{margin-bottom: 30px; text-align: center;}
+.sign .input{
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  text-align: center;
+
+}
+.sign .box .button{
+  text-align: center;
+}
+.sign .input input{
+  background: #333;
+  border: none;
+  outline: none;
+  height: 100%;
+width: 80%;
+border-radius: 10px;
+color: white;
+padding-left: 30px;
+
+}
+.sign button{
+  font-weight: bold;
+  color: white;
+  background: #e50914;
+  border: none;
+  margin-top: 20px;
+  width:50%;
+  border-radius: 10px;
+  padding: 12px 0;
+  font-size: 20px;
+  
+}
