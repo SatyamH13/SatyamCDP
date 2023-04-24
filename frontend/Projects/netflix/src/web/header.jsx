@@ -1,4 +1,4 @@
-import React,{useState,useLayoutEffect, useEffect} from 'react';
+import React,{useState,useLayoutEffect, useEffect, useRef} from 'react';
 import { Link } from 'react-router-dom';
 import Program1 from './program1';
 import Program2 from "./program2";
@@ -14,8 +14,11 @@ import Loading from './loading';
 function Header(props) {
 
     const[loading,setloading]=useState(true);
+    const innerref = useRef(null)
 
     useLayoutEffect(()=>{
+        const div = innerref.current;
+
         setTimeout(()=>{
            setloading(false)
                    
@@ -23,9 +26,12 @@ function Header(props) {
         
         },2000)
        
+       
       })
   
 
+
+    
       let c1=document.querySelector(".c1");
       let c2=document.querySelector(".c2");
       
@@ -34,17 +40,19 @@ function Header(props) {
         c1.style.left = e.pageX + "px";
         c2.style.top = e.pageY + "px";
         c2.style.left = e.pageX + "px";
-       }
+       
       
       
       let dk = document.querySelectorAll(".clc");
       console.log(dk);
       
-        //  dk.addEventListner("onmouseenter",function(){
-        //      console.log("jytyjf");
-        //      c1.classList.add("hide");
-        //     })
+         dk.addEventListner("onmouseenter",function(){
+             console.log("jytyjf");
+             c1.classList.add("hide");
+            })
 
+    }
+      
     return (     <>
      <div className="c1"></div>
        <div className="c2"></div>

@@ -13,6 +13,7 @@ import {
    Route,
  
  } from "react-router-dom";
+ import Demo from './web/demo'
 
 
 
@@ -25,6 +26,7 @@ root.render(
       <Route path='/' element={<Header/>}/>
       <Route path='/signin' element={<Sign/>} />
     </Routes>
+    {/* <Demo/> */}
     </BrowserRouter>
   </React.StrictMode>
 );
